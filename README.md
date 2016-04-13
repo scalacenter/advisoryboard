@@ -28,7 +28,7 @@ proposal.
 Proposals should follow the format and sections laid out in the [template
 proposal](https://github.com/scalacenter/advisoryboard/tree/master/templates/proposal.md).
 
-## Agendas
+## Invitations
 
 For reference, invitations sent to each Advisory Board representative are
 included in the 
