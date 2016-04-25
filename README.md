@@ -8,9 +8,10 @@ recommendations on the activities of the Scala Center, under the provisions of
 the [Scala Industry Affiliates
 Program](https://scala.epfl.ch/docs/ScalaCenterMembershipRegulations.pdf)
 
-## Proposals
+## Proposals for Recommendation
 
-Proposals may be submitted to the Advisory Board only by
+Proposals for recommendation may be submitted to the Advisory Board for
+consideration only by
 
  - The Scala Center,
  - advisory board members,
@@ -26,7 +27,15 @@ Proposal (SCP) number in sequence, and the file should be named
 proposal.
 
 Proposals should follow the format and sections laid out in the [template
-proposal](https://github.com/scalacenter/advisoryboard/tree/master/templates/proposal.md).
+proposal](https://github.com/scalacenter/advisoryboard/tree/master/templates/proposal.md),
+and should be concise enough to fit on a single side of paper if printed out.
+
+## Recommendations
+
+Once a proposal has been adopted by the Advisory Board, it will become a
+recommendation, and should be copied, noting any amendments, into the
+[recommendations](https://github.com/scalacenter/advisoryboard/tree/master/recommendations)
+directory.
 
 ## Invitations
 

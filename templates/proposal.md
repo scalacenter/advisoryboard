@@ -7,8 +7,8 @@ Proposed by [Proposer], [Affiliation], [Date]
 ## Abstract
 
 A description of the context in which this proposal is being made, clearly
-describing the problems with the situation with reasons why it is
-considered unsatisfactory.
+describing the problems with the situation with reasons why it is considered
+unsatisfactory.
 
 ## Proposal
 
