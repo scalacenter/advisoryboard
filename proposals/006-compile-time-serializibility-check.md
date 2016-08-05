@@ -34,7 +34,7 @@ class Adder(y: Int) {
 }
 ```
 
-This is a great start and there is already a [SIP](http://docs.scala-lang.org/sips/pending/spores.html) for Spores. Such a mechanism would also benefit other projects
+This is a great start and there is already a [SIP for Spores](http://docs.scala-lang.org/sips/pending/spores.html). Such a mechanism would also benefit other projects
 like Akka and any other distributed/concurrent framework.
 
 A slightly different representation of this check, such as an annotation,
