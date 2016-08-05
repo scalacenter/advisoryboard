@@ -35,7 +35,7 @@ class Adder(y: Int) {
 ```
 
 This is a great start. Such a mechanism would also benefit other projects
-like Akka and any other disttibuted/concurrent framework.
+like Akka and any other distributed/concurrent framework.
 
 A slightly different representation of this check, such as an annotation,
 might be more elegant.
