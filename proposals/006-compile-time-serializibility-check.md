@@ -35,7 +35,7 @@ class Adder(y: Int) {
 ```
 
 This is a great start. Such a mechanism would also benefit other projects
-like **BLAH and BLAH**.
+like Akka and any other disttibuted/concurrent framework.
 
 A slightly different representation of this check, such as an annotation,
 might be more elegant.
@@ -44,7 +44,7 @@ might be more elegant.
 ## Proposal
 
 The Scala Center should evaluate the potential benefit of the availability of
-such a construct. If determined to be useful, it could also explore alternate
+such a safe serialization construct. If determined to be useful, it could also explore alternate
 ways of expressing this check.
 Also a discussion of whether this becomes part of the language, core libraries
 or is maintained as a separate project would be useful.
