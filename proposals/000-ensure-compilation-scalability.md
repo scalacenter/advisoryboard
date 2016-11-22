@@ -8,7 +8,7 @@ Proposed by Stu Hood, Twitter, November 2016
 
 The most commonly discussed angle of attack for improving the Scala build experience is improving the speed of the compiler. Instead, this document addresses a different angle: ensuring that it is possible to scale multiple, parallel (even remote) invocations of the compiler.
 
-Particularly when building very large Scala projects, the presence/necessity of transitive build dependencies on the compile classpath represents a very real limit on the ability to distribute compilation: shipping 2000 transitive dependencies to a cluster of remote compiler instances is significantly more challenging than shipping 20 direct dependencies.
+When building very large Scala projects, the presence/necessity of transitive build dependencies on the compile classpath represents a very real limit on the ability to distribute compilation: shipping 2000 transitive dependencies to a cluster of remote compiler instances is significantly more challenging than shipping 20 direct dependencies. Additionally, over-declaring dependencies causes cache keys for build artifacts to be invalidated more often than is strictly necessary.
 
 scalac generally does not require the entire transitive classpath of a library to compile it, but its requirements are not formally defined, and in many cases are non-intuitive. This uncertainty makes it difficult to accurately declare the direct/"strict" dependencies of a library... a generally accepted build-hygiene best practice with great benefits for scalability (and straight-line performance).
 
