@@ -5,14 +5,15 @@
 Proposed by Lightbend, November 2016
 
 credits:
+
 * initial draft: Seth Tisue
-* feedback: Adriaan Moors, Dale Wijnand, Eugene Yokota
+* feedback: Adriaan Moors, Dale Wijnand, Eugene Yokota, community
 
 ## Abstract
 
 We propose that the Scala Center assume responsibility for updating
 and maintaining the scala-lang.org, docs.scala-lang.org, and
-scala.epfl.ch websites.
+scala.epfl.ch websites, including supporting external contributors.
 
 These sites are Scala's public face to the world.  It's vital to
 the health and growth of the Scala language and the Scala community
@@ -21,17 +22,17 @@ that we show the world the best face we can.
 Note that we are not proposing a wholesale redesign and/or rethink of
 the sites, or any substantial expansion.  The scope of the current
 proposal is limited to updating and maintenance of existing content,
-plus making whatever modest, targeted, specific additions and
-improvements that can be done at limited cost.
+aiding contributors, and making whatever modest, targeted, specific
+additions and improvements that can be done at limited cost.
 
 ## Proposal
 
 Major areas of concern include:
 
 * All three sites have outdated content
-* Issues and pull requests need ongoing attention
 * Comments need ongoing attention
 * Infrastructure updates are needed
+* External contributors should be supported and encouraged
 
 More detail on all of these follows. The specifics below aren't
 meant to be binding; they're examples.
@@ -58,11 +59,6 @@ meant to be binding; they're examples.
       visitors new to the language; it needs an overhaul.  The look
       and feel of the site should be brought in line with
       scala-lang.org.
-* Issues and pull requests need ongoing attention
-    * Scala Center and Lightbend personnel do sometimes review and merge
-      contributors' pull requests for the sites, but no one is
-      primarily responsible and the handling has been intermittent and
-      inconsistent.  This is discouraging for outside contributors.
 * Comments need ongoing attention
     * The Disqus comments on docs.scala-lang need to be moderated for
       spam, tone, and relevancy.  Not all comments can or should
@@ -79,10 +75,15 @@ meant to be binding; they're examples.
       other sites and applications; it could be independently
       cloud-hosted.  The docs site takes a long time to build,
       which is discouraging for contributors; this should be fixed.
-
-Some of these items involve improving the sites directly.  Others
-would make it easier for community members to contribute their own
-improvements.
+* External contributors should be supported and encouraged
+    * Scala Center and Lightbend personnel have reviewed and merged
+      contributors' pull requests for the sites, but no one is
+      primarily responsible and the handling has been intermittent and
+      inconsistent.  This is discouraging for outside contributors.
+    * Beyond the minimum of responding to issues and PRs,
+      new contributors could be sought out and encouraged.
+      Increased Scala Center involvement and increased community involvement
+      should go hand in hand.
 
 There are GitHub tickets on some of these issues.  Tickets also exist
 on many issues not specifically mentioned here.
