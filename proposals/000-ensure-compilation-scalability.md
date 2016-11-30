@@ -97,4 +97,4 @@ TBD
 
 ## Timescales
 
-Ideally, action on this proposal would occur sometime within the next 6 to 9 months (from November 2016), in order to align with Twitter internal efforts toward build graph improvements (which will hopefully include enabling usage of only strict/direct dependencies).
+Ideally, action on this proposal would occur sometime within the next 6 to 9 months (from November 2016), in order to align with Twitter internal efforts toward build graph improvements (which will hopefully include enabling usage of only direct dependencies).
