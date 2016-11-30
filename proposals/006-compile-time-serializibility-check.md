@@ -1,4 +1,4 @@
-# SCP-006: [Compile Time Check of Serializability]
+# SCP-006: Compile Time Check of Serializability
 
 ## Proposer
 
