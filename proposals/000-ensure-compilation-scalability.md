@@ -1,4 +1,4 @@
-# SCP-[000]: Minimization of compilation classpaths
+# SCP-[000]: Improve user experience for builds that use only direct dependencies
 
 ## Proposer
 
@@ -12,9 +12,7 @@ The most commonly discussed angle of attack for improving the Scala build experi
 
 ### Minimization of compilation classpaths
 
-Our build workflow at Twitter is centered around a monorepo. Instead of keeping internal projects in separate repositories, we merge them into one repository (hence the name "monorepo"), significantly reducing the overhead associated with evolving independent repositories.
-
-In comparison with a more common workflow that involves a number of coarse-grained projects and intra-project incremental compilation via sbt, our build workflow relies on many more (tens of thousands) fine-grained modules and inter-project incrementality. This workflow is enabled by Pants, our open-source build tool that understands a multitude of languages including Java, Scala, Python and others. A similar approach is used in other popular build tools (Blaze/Bazel, Buck) and companies (Google, Facebook, Foursquare, Square, Medium and others).
+In comparison with a more common project-centric workflow that involves a number of coarse-grained projects and intra-project incremental compilation via sbt, Twitter's build workflow relies on many more (tens of thousands) fine-grained modules and inter-project incrementality. This workflow is enabled by Pants, our open-source build tool that understands a multitude of languages including Java, Scala, Python and others. A similar fine-grained approach is used in other popular build tools (Blaze/Bazel, Buck) and companies (Google, Facebook, Foursquare, Square, Medium and others).
 
 One benefit of having a large number of modules is the ability to perform parallel builds, distributing independent build tasks between  different workers in a build cluster. This has a potential to significantly improve the build experience for large projects.
 
@@ -91,11 +89,18 @@ In order to enable builds that operate only on direct dependencies, absence of a
 
 ## Proposal
 
-TBD
+A few potential concrete outcomes of this effort, in descending order based on how useful they would be to users, and to developers of Scala build-tooling:
+
+1. Improvements to the user experience of stub errors, centered around the `Statement`: that they are an expected common case, rather than a rare, unexpected, or fatal condition.
+2. Reduction of the number of cases that result in stub errors... ie, allowing more usecases that currently result in a stub error to successfully compile, and thus allowing for fewer direct dependencies.
+3. A compiler flag to require `import` statements for all symbols used during compilation (including those not otherwise mentioned in the source). For symmetry with `-Ywarn-unused-imports`, this option might potentially be called `-Ywarn-undeclared-imports`. It would primarily assist with making the transition from transitive to direct dependencies, rather than helping to maintain a build that is already using direct dependencies. (as suggested by [@posco](twitter.com/posco) and [@adriaanm](https://twitter.com/adriaanm))
+4. An expansion of the Scala Language Specification to list all cases in which a symbol from another compilation unit must be present on the classpath, including: 1) subclassing, 2) return types of superclasses' public methods, 3) direct reference, 4) etc.
 
 ## Cost
 
-TBD
+Although this proposal is bounded in scope (it is possible to call it "done" when one or more of the above proposals are implemented), it is purposely open-ended with regard to strategy in order to give the implementers flexibility to work with the core team, and to use their best judgement.
+
+Depending on the resulting strategy, this proposal might cost 1 person-month to implement item `1` or item `4`, or perhaps 2 person-months to implement items `1` and `2`.
 
 ## Timescales
 
