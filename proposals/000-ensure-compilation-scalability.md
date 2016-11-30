@@ -10,7 +10,7 @@ The most commonly discussed angle of attack for improving the Scala build experi
 
 ## Minimization of compilation classpaths
 
-Our build workflow at Twitter is centered around a monorepo. Instead of keeping internal projects in separate repositories, we merge them into one repository (hence the name “monorepo”), significantly reducing the overhead associated with evolving independent repositories.
+Our build workflow at Twitter is centered around a monorepo. Instead of keeping internal projects in separate repositories, we merge them into one repository (hence the name "monorepo"), significantly reducing the overhead associated with evolving independent repositories.
 
 In comparison with a more common workflow that involves a number of coarse-grained projects and intra-project incremental compilation via sbt, our build workflow relies on many more (tens of thousands) fine-grained modules and inter-project incrementality. This workflow is enabled by Pants, our open-source build tool that understands a multitude of languages including Java, Scala, Python and others.
 
