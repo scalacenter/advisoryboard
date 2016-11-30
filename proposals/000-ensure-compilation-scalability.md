@@ -6,7 +6,9 @@ Proposed by Stu Hood, Eugene Burmako - Twitter - November 2016
 
 ## Abstract
 
-The most commonly discussed angle of attack for improving the Scala build experience is speeding up the compiler. Instead, this proposal addresses a different angle: minimizing compilation classpaths to enable distributed builds.
+The most commonly discussed angle of attack for improving the Scala build experience is improving the speed of the compiler. Instead, this document addresses a different angle: improving the experience of using only "direct" dependencies in builds, in order to improve cache hit rates and unblock scaling multiple remote invocations of the compiler.
+
+A "direct" (also known as "strict") dependency is a dependency that is specifically mentioned in the build definition for some compilation unit. "direct" dependencies are thus differentiated from "transitive" dependencies (which are collected by walking the transitive closure of direct dependencies).
 
 ## Background
 
