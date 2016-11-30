@@ -1,4 +1,4 @@
-# SCP-009: Maintain scala-lang, docs.scala-lang, scala.epfl.ch websites
+# SCP-008: Maintain scala-lang, docs.scala-lang, scala.epfl.ch websites
 
 ## Proposer
 

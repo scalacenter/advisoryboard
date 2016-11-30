@@ -20,6 +20,7 @@ current representatives are:
  - Goldman Sachs: Jonathan Perry
  - IBM: David Grove
  - Lightbend: Adriaan Moors
+ - Morgan Stanley: James Belsey
  - Nitro: Roland Tritsch
  - SAP: Rami Akkad
  - Tapad: Dag Liodden
@@ -32,6 +33,7 @@ A number of members are also selected to sit on the board to represent the Scala
 community. Currently, these are:
 
  - Bill Venners
+ - Lars Hupel (TBC)
 
 ## Other Attendees
 
