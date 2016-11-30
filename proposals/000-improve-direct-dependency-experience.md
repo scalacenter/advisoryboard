@@ -102,7 +102,10 @@ A few potential concrete outcomes of this effort, in descending order based on h
 
 Although this proposal is bounded in scope (it is possible to call it "done" when one or more of the above proposals are implemented), it is purposely open-ended with regard to strategy in order to give the implementers flexibility to work with the core team, and to use their best judgement.
 
-Depending on the resulting strategy, this proposal might cost 1 person-month to implement item `1` or item `4`, or perhaps 2 person-months to implement items `1` and `2`.
+Depending on the resulting strategy, this proposal might cost:
+- 3 to 6 person-months invested in items `1` and `2`
+- 1 to 3 person-months to implement item `3`
+- 3 to 9 person-months to improve the spec for item `4`
 
 ## Timescales
 
