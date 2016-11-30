@@ -8,17 +8,19 @@ Proposed by Stu Hood, Eugene Burmako - Twitter - November 2016
 
 The most commonly discussed angle of attack for improving the Scala build experience is speeding up the compiler. Instead, this proposal addresses a different angle: minimizing compilation classpaths to enable distributed builds.
 
-## Minimization of compilation classpaths
+## Background
+
+### Minimization of compilation classpaths
 
 Our build workflow at Twitter is centered around a monorepo. Instead of keeping internal projects in separate repositories, we merge them into one repository (hence the name "monorepo"), significantly reducing the overhead associated with evolving independent repositories.
 
-In comparison with a more common workflow that involves a number of coarse-grained projects and intra-project incremental compilation via sbt, our build workflow relies on many more (tens of thousands) fine-grained modules and inter-project incrementality. This workflow is enabled by Pants, our open-source build tool that understands a multitude of languages including Java, Scala, Python and others.
+In comparison with a more common workflow that involves a number of coarse-grained projects and intra-project incremental compilation via sbt, our build workflow relies on many more (tens of thousands) fine-grained modules and inter-project incrementality. This workflow is enabled by Pants, our open-source build tool that understands a multitude of languages including Java, Scala, Python and others. A similar approach is used in other popular build tools (Blaze/Bazel, Buck) and companies (Google, Facebook, Foursquare, Square, Medium and others).
 
 One benefit of having a large number of modules is the ability to perform parallel builds, distributing independent build tasks between  different workers in a build cluster. This has a potential to significantly improve the build experience for large projects.
 
-Naturally, the viability of such a distributed build hinges on the amount of data sent over the network. This becomes a real problem in our setting, because it is not uncommon for a module to have hundreds of transitive dependencies. Therefore, it is critical for us to minimize compilation classpaths.
+Naturally, the viability of such a distributed build hinges on the amount of data sent over the network. This becomes a real problem for large projects, because in such setting it is not uncommon for a module to have hundreds or thousands of transitive dependencies. Therefore, it is critical for us to minimize compilation classpaths.
 
-## Dropping transitive dependencies from compilation classpaths
+### Dropping transitive dependencies from compilation classpaths
 
 On our quest to minimize compilation classpaths, we observe that it is often unnecessary to have the entire runtime classpath during compilation.
 
