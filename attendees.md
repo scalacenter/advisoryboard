@@ -18,11 +18,11 @@ current representatives are:
 
  - 47 Degrees: Raúl Raja Martínez
  - Goldman Sachs: Jonathan Perry
- - IBM: David Grove
+ - IBM: Frederick Reiss
  - Lightbend: Adriaan Moors
  - Morgan Stanley: James Belsey
  - Nitro: Roland Tritsch
- - SAP: Rami Akkad
+ - SAP: Thomas Gawlitza
  - Tapad: Dag Liodden
  - Twitter: Stu Hood
  - Verizon: Timothy Perrett
