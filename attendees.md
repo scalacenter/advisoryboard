@@ -18,10 +18,11 @@ current representatives are:
 
  - 47 Degrees: Raúl Raja Martínez
  - Goldman Sachs: Jonathan Perry
- - IBM: David Grove
+ - IBM: Frederick Reiss
  - Lightbend: Adriaan Moors
+ - Morgan Stanley: James Belsey
  - Nitro: Roland Tritsch
- - SAP: Rami Akkad
+ - SAP: Thomas Gawlitza
  - Tapad: Dag Liodden
  - Twitter: Stu Hood
  - Verizon: Timothy Perrett
@@ -32,6 +33,7 @@ A number of members are also selected to sit on the board to represent the Scala
 community. Currently, these are:
 
  - Bill Venners
+ - Lars Hupel (TBC)
 
 ## Other Attendees
 

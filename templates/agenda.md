@@ -10,16 +10,17 @@
   A. Nominations
   B. Representations
   C. Voting
-5. Election of Affiliate members (if necessary)
+5. Community Member Updates
+6. Election of Affiliate members (if necessary)
  a. Nominations
  b. Representations
  c. Voting
-6. Proposals
+7. Proposals
  a. SCP-xxx [Proposal title]
   A. Representations
   B. Discussion
   C. Voting
  b. ...
-7. Any other business
-8. Date of next meeting
-9. Closing remarks (Chairperson)
+8. Any other business
+9. Date of next meeting
+10. Closing remarks (Chairperson)

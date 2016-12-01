@@ -1,4 +1,4 @@
-# SCP-[000]: [Title of the Proposal]
+# [Title of the Proposal]
 
 ## Proposer
 
@@ -18,6 +18,10 @@ to correct or mitigate the problems identified in the Abstract.
 Where variations of the proposal exist, and the Advisory Board should
 additionally make a choice about which variant should be adopted, those
 variants should be listed here.
+
+Note that the Scala Center will ascribe a three-digit number to the proposal at
+the point it is merged into the repository, so there should be no need to
+determine the next number in the sequence when making a proposal.
 
 ## Cost
 

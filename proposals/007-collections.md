@@ -1,4 +1,4 @@
-# SCP-011: Collaborative redesign and implementation of Scala 2.13's collections library.
+# SCP-007: Collaborative redesign and implementation of Scala 2.13's collections library.
 
 ## Proposer
 

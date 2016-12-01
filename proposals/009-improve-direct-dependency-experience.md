@@ -1,4 +1,4 @@
-# SCP-[000]: Improve user experience for builds that use only direct dependencies
+# SCP-009: Improve user experience for builds that use only direct dependencies
 
 ## Proposer
 
