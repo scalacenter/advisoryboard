@@ -16,7 +16,7 @@ The Scala collections library underwent a major redesign in Scala 2.8. While the
 
 Lightbend will contribute a significant amount of engineering time to lead and help implement the project with the goal of integrating the library into Scala 2.13. Due to the size of the effort and the large number of interested parties, the Scala Center should also be involved in the design and implementation of the new collections library. We expect the following activities as part of the project:
 
-- Define the new design, following the appropriate Scala library improvement process (SLIP):
+- Define the new design, following the appropriate Scala Improvement process (SIP):
   - Solicit and incorporate feedback from the existing strawman proposals, the community and commercial users.
 - Testing
   - Both correctness and performance should be tested, reusing the existing suites.
@@ -28,7 +28,7 @@ Lightbend will contribute a significant amount of engineering time to lead and h
   - Define and implement a migration strategy.
   - Apply the migration strategy to the projects in the community build to assess the cost.
 
-Explicit goals of the new design, which should be reflected in the SLIP proposal that follows from this proposal:
+Explicit goals of the new design, which should be reflected in the SIP proposal that follows from this proposal:
 - Minimize migration effort from Scala 2.12's collections. 
 - To the largest extent possible, reuse the current implementation and its test suite, as they have been hardened by production use over many years.
 - Simpler API and implementation and a more maintainable code base.
