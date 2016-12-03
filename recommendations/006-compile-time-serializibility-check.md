@@ -1,0 +1,1 @@
+../proposals/006-compile-time-serializibility-check.md

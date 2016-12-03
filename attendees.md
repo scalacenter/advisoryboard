@@ -33,7 +33,7 @@ A number of members are also selected to sit on the board to represent the Scala
 community. Currently, these are:
 
  - Bill Venners
- - Lars Hupel (TBC)
+ - Lars Hupel
 
 ## Other Attendees
 
