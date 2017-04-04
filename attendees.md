@@ -21,7 +21,6 @@ current representatives are:
  - IBM: Frederick Reiss
  - Lightbend: Adriaan Moors
  - Morgan Stanley: James Belsey
- - Nitro: Roland Tritsch
  - SAP: Thomas Gawlitza
  - Tapad: Dag Liodden
  - Twitter: Stu Hood
