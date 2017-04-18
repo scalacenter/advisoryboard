@@ -2,8 +2,7 @@
 
 ## Proposer
 
-Proposed by Sam Halliday, on behalf of the Scala tooling community,
-March 2017.
+Proposed by Lars Hupel, with help from Sam Halliday, April 2017
 
 ## Abstract
 
