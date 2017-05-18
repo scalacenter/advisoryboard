@@ -1,4 +1,4 @@
-# Debugging Position Information
+# Providing Better Compilation Performance Information
 
 ## Proposer
 
