@@ -2,10 +2,7 @@
 
 ## Proposer
 
-Proposed by Jon Pretty, Chairperson.
-
-FIXME: Need to decide whether I can make a proposal directly, or should go
-through a community representative.
+Proposed by Lars Hupel, on behalf of Jon Pretty.
 
 ## Abstract
 
