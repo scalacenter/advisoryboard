@@ -2,7 +2,7 @@
 
 ## Proposer
 
-Proposed by Lars Hupel, on behalf of Jon Pretty.
+Proposed by Bill Venners, with help from Jon Pretty.
 
 ## Abstract
 
