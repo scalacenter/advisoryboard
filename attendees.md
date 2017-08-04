@@ -22,7 +22,6 @@ current representatives are:
  - Lightbend: Adriaan Moors
  - Morgan Stanley: James Belsey
  - SAP: Thomas Gawlitza
- - Tapad: Dag Liodden
  - Twitter: Stu Hood
  - Verizon: Timothy Perrett
 
