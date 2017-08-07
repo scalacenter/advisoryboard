@@ -2,7 +2,7 @@
 
 ## Proposer
 
-Proposed by Lars Hupel, with help from Sam Halliday, April 2017
+Proposed by Lars Hupel, written by Sam Halliday, April 2017
 
 ## Abstract
 
