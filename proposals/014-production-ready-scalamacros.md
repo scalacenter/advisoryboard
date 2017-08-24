@@ -25,7 +25,7 @@ We propose that the Scala Center invests engineering resources to make scalamacr
 
 Focus should be put on the following tasks:
 
-- Finalize support for macro annotations with coverage for class/trait/object/def definitions and modifiers. This does not include support for more complicated syntactic structures such as patterns or for-comprehensions.
+- Finalize support for macro annotations with coverage for class/trait/object/def definitions and modifiers.
 - Finish support for def macro materializers with full coverage for types. This includes support for the functionality provided by legacy whitebox macros-- specifically allowing def macros to inspect types at the macro callsite and return values of types not known before macro expansion.
 - Provide documentation for using the new macro system. This includes a migration guide from legacy macros, potentially with scalafix rewrites.
 
