@@ -13,8 +13,9 @@ Unfortunately, Scala macros have also gained notoriety as an arcane and brittle 
 During the last couple years a new macro system has been developed to support both Scala 2.x and Scala 3.x. The new system is based on the platform-independent metaprogramming API Scalameta, which is designed to be easy to use and easy to support across multiple implementations of the Scala language. The result of this multi-year effort is hosted at https://github.com/scalamacros/scalamacros and its design is explained in detail in the paper [“Two approaches to portable macros”](https://www.dropbox.com/s/2xzcczr3q77veg1/gestalt.pdf).
 
 This repository is currently a working prototype of the new macro system that features:
-Scalameta based syntactic and semantic APIs that cross-compile against Scala 2.12, 2.13 and Dotty. The corresponding library is quite slim, being less than 500Kb in size.
-A prototype implementation of the new macro engine for Scala 2.12.3 that supports macro annotations and def macros.
+
+- Scalameta based syntactic and semantic APIs that cross-compile against Scala 2.12, 2.13 and Dotty. The corresponding library is quite slim, being less than 500Kb in size.
+- A prototype implementation of the new macro engine for Scala 2.12.3 that supports macro annotations and def macros.
 
 No one is currently employed to work on scalamacros/scalamacros. This means that the project relies on volunteer effort to reach a production-ready status.
 
