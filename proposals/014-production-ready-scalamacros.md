@@ -44,6 +44,8 @@ No one is currently employed to work on scalamacros/scalamacros. This
 means that the project relies on volunteer effort to reach a
 production-ready status.
 
+[gestalt]: https://www.dropbox.com/s/2xzcczr3q77veg1/gestalt.pdf
+
 ## Proposal
 
 We propose that the Scala Center invests engineering resources to make
@@ -65,14 +67,10 @@ Focus should be put on the following tasks:
   rewrites.
 
 
-## Cost
+## Cost & Timescales
 
 We expect each of these items to require a minimum one month
 effort. Combined, we expect 4 to 5 months of a full-time hired
 engineer.
 
-## Timescale
-
 The project should be completed by March 2018.
-
-[gestalt]: https://www.dropbox.com/s/2xzcczr3q77veg1/gestalt.pdf
