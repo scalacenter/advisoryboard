@@ -8,9 +8,9 @@ Proposed by 47 Degrees and SAP. Prepared with help from Eugene Burmako and Olafu
 
 Def macros and macro annotations have become an integral part of the Scala 2.x ecosystem. Well-known libraries like Play, sbt, Scala.js, ScalaTest, Shapeless, Slick, Spark, Spire and others use macros to achieve previously unreachable standards of terseness and type safety.
 
-Unfortunately, Scala macros have also gained notoriety as an arcane and brittle technology. The most common criticisms of Scala macros concern their difficult metaprogramming API based on compiler internals as well as a lack of featureful editor support. Even five years after their introduction, traditional macros don’t expand properly in Intellij. This leads to a proliferation of spurious “red squiggle” errors, even in simple projects. As a result of these problems the language committee has decided to retire the current macro system in Scala 3.x.
+Unfortunately, Scala macros have also gained notoriety as an arcane and brittle technology. The most common criticisms of Scala macros concern their difficult metaprogramming API based on compiler internals as well as a lack of featureful editor support. Even five years after their introduction, traditional macros don’t expand properly in Intellij. This leads to a proliferation of spurious “red squiggle” errors, even in simple projects. As a result of these problems the language committee has decided to retire the current macro system in Dotty (Scala 3.x).
 
-During the last couple years a new macro system has been developed to support both Scala 2.x and Scala 3.x. The new system is based on the platform-independent metaprogramming API Scalameta, which is designed to be easy to use and easy to support across multiple implementations of the Scala language. The result of this multi-year effort is hosted at https://github.com/scalamacros/scalamacros and its design is explained in detail in the paper [“Two approaches to portable macros”](https://www.dropbox.com/s/2xzcczr3q77veg1/gestalt.pdf).
+During the last couple years a new macro system has been developed to support both Scala 2.x and Dotty. The new system is based on the platform-independent metaprogramming API Scalameta, which is designed to be easy to use and easy to support across multiple implementations of the Scala language. The result of this multi-year effort is hosted at https://github.com/scalamacros/scalamacros and its design is explained in detail in the paper [“Two approaches to portable macros”](https://www.dropbox.com/s/2xzcczr3q77veg1/gestalt.pdf).
 
 This repository is currently a working prototype of the new macro system that features:
 
@@ -21,7 +21,7 @@ No one is currently employed to work on scalamacros/scalamacros. This means that
 
 ## Proposal
 
-We propose that the Scala Center invests engineering resources to make scalamacros/scalamacros production ready so the community can migrate to this new macro system. This will ultimately enable better IDE support and ease migration to dotty.
+We propose that the Scala Center invests engineering resources to make scalamacros/scalamacros production ready so the community can migrate to this new macro system. This will ultimately enable better IDE support and ease migration to Dotty.
 
 Focus should be put on the following tasks:
 
