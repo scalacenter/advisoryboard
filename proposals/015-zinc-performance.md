@@ -1,4 +1,4 @@
-# SCP-XXX: Improving performance and profiling of Zinc
+# SCP-015: Improving performance and profiling of Zinc
 
 ## Proposer
 
