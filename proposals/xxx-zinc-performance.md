@@ -69,9 +69,8 @@ This profile metadata captures information such as:
 
 We believe that this work should include validation tooling to help ensure the
 stability and effectiveness of the incremental compiler. This tooling would
-provide useful both for finding bugs (e.g. when cases where Zinc under
-
-compiles) and also in investigating and assessing performance improvements.
+provide useful both for finding bugs (e.g. when cases where Zinc undercompiles)
+and also in investigating and assessing performance improvements.
 
 It would be an incredibly powerful tool to have the ability to replay a git
 repository through the incremental compiler, i.e. replaying each commit of a
