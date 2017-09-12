@@ -1,4 +1,4 @@
-# Production ready scalamacros/scalamacros
+# SCP-014: Production ready scalamacros/scalamacros
 
 ## Proposer
 
