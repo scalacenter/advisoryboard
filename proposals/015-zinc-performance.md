@@ -32,9 +32,7 @@ help identify and improve these situations.
 ### Proposal
 
 We propose to enhance incremental compilation in a similar fashion that
-
-SCP-010 has done for
-
+[SCP-010] has done for
 standard compilation. The idea is to improve profiling and performance of
 [Zinc](zinc) —Scala's incremental compiler— aiming at:
 
@@ -50,7 +48,7 @@ After the realization of this proposal, Zinc should provide profiling metadata
 that allows users to analyze the behaviour of incremental compiles throughout a
 developer session (e.g. one day).
 
-Similar to SCP-010 statistics, this profiling metadata should be accessible in
+Similar to [SCP-010] statistics, this profiling metadata should be accessible in
 both human and machine readable forms so that larger scale analysis can be
 performed.
 
@@ -102,7 +100,7 @@ perceived performance of compilation.
 
 We see several ways of making Zinc faster, overall:
 
-1. Making structural changes to the incremental compiler to **reduce its
+1. **Making structural changes to the incremental compiler to reduce its
    compilation overhead**.
 
    After Scala 2.12.3 has been released with important performance
@@ -116,8 +114,8 @@ We see several ways of making Zinc faster, overall:
    code generation. This last idea, while feasible and impactful, has yet to be
    confirmed practical by Zinc maintainers.
 
-2. **Researching which aspects of the Scala programming language impact**
-   incremental compilation the most.
+2. **Researching which aspects of the Scala programming language impact
+   incremental compilation the most**.
 
    For example, it is known that incremental compilation is heavily affected by
    project structure.  Leaving the compiler to infer public signatures or
