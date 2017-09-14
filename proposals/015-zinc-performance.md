@@ -31,10 +31,9 @@ help identify and improve these situations.
 
 ### Proposal
 
-We propose to enhance incremental compilation in a similar fashion that
-[SCP-010] has done for
-standard compilation. The idea is to improve profiling and performance of
-[Zinc](zinc) —Scala's incremental compiler— aiming at:
+We propose to enhance incremental compilation in a similar fashion that [SCP-010]
+has done for standard compilation. The idea is to improve profiling and
+performance of [Zinc](zinc) —Scala's incremental compiler— aiming at:
 
 1. Understanding the incremental compilers performance profile.
 2. Making incremental compilation faster; and,
