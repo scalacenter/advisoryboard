@@ -49,16 +49,15 @@ directory.
 Agendas for each Advisory Board meeting shall be made available online at least
 five days before the meeting takes place, and shall reside in the
 [agendas](https://github.com/scalacenter/advisoryboard/tree/master/agendas)
-directory, using the same naming scheme as the minutes.
-
-## Minutes
-
-The minutes of the Scala Center shall be written up by the secretary after each
-meeting, and made available shortly afterwards in the
-[minutes](https://github.com/scalacenter/advisoryboard/tree/master/minutes)
 directory, under the filename `xxx-yyyy-qz.md`, where `xxx` represents the
 meeting number, `yyyy` represents the year and `z` represents the quarter (1,
 2, 3 or 4).
+
+## Minutes
+
+The minutes of the Scala Center shall be written up by the secretary
+after each meeting, and made available shortly afterwards
+[on the Scala Center website](https://scala.epfl.ch/records.html).
 
 ## Contributions
 
