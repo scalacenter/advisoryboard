@@ -23,7 +23,7 @@ current representatives are:
  - Morgan Stanley: James Belsey
  - SAP: Thomas Gawlitza
  - Twitter: Stu Hood
- - Verizon: TBC
+ - Verizon: Haripriya Srinivasaraghavan
 
 ## Community Members
 
