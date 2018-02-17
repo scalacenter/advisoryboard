@@ -76,6 +76,7 @@ as `wobble t or optwobble s`.
 
 In this project, we propose that a proof-of-concept command line tool be written
 that can generate English verbal descriptions, for source files or snippets of
+
 Scala code. Key features would include
 
 - description at point
@@ -125,6 +126,9 @@ Future work may include integration with the compiler reporter, REPL and
 scaladocs, along with further improvements and personalisations / localisations
 of the verbal descriptions.
 
+On the IDE / editor integration side, the tool should be easily integrated in a general porpose IDE or editor, in such a way that leverages existing accessibility support with minimal or no effort, except for user specific configuration or personalization.
+
+
 ## Cost
 
 No external costs.
@@ -137,3 +141,38 @@ users are encouraged to improve and maintain the tool going forward.
 
 Rui Batista has offered to provide code input alongside expected output, along
 with general accessibility advice.
+
+
+## Example output
+
+Follows an additional set of inital attemps for speech output of some common scala constructs. We provide both verbose output and high level summary versions for each example. 
+
+
+```scala
+case class Person(name: String, address: Address, age: Int)
+// case class Person containing name String, address address Address and age Int
+// case class Person with name, address and age
+```
+
+
+```scala
+trait Monad[F[_]] extends Applicative[F] {
+    // five methods defined here...
+}
+// trait Monad with higher type F extending applicative of F with five declarations
+// trait Monad higher F
+```
+
+```scala
+val a = 5
+// val a with value 5 
+// val a
+```
+
+```scala
+type ErrorsOr[A] = ValidatedNel[String, A]
+// type alias ErrorsOr type A equal to ValidatedNel of String and type A
+// alias ErrorsOr A
+```
+
+
