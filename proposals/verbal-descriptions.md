@@ -126,8 +126,15 @@ Future work may include integration with the compiler reporter, REPL and
 scaladocs, along with further improvements and personalisations / localisations
 of the verbal descriptions.
 
-On the IDE / editor integration side, the tool should be easily integrated in a general porpose IDE or editor, in such a way that leverages existing accessibility support with minimal or no effort, except for user specific configuration or personalization.
+Summaries could potentially be used in text editors and IDEs for sighted
+developers much as "import folding" and "comment folding" features can hide
+boilerplate. A method definition could be folded under a clickable button with
+an appropriate description, as produced by this tool.
 
+The tool should be easily integrated in a general purpose editor in such a way
+that leverages existing accessibility support with minimal or no effort. In
+Emacs, this could be achieved with a simple function call to the CLI tool,
+piping the results to a buffer that emacsspeak is aware of.
 
 ## Cost
 
@@ -142,6 +149,8 @@ users are encouraged to improve and maintain the tool going forward.
 Rui Batista has offered to provide code input alongside expected output, along
 with general accessibility advice.
 
+Sam Halliday has offered to provide a simple emacs function that can call the
+CLI tool.
 
 ## Example output
 
@@ -150,8 +159,9 @@ Follows an additional set of inital attemps for speech output of some common sca
 
 ```scala
 case class Person(name: String, address: Address, age: Int)
-// case class Person containing name String, address address Address and age Int
-// case class Person with name, address and age
+// case class Person containing name String, address Address and age Int
+// --summary --prefer=symbols: case class Person with name, address and age
+// --summary --prefer=types:   case class Person with String, Address and Int
 ```
 
 
