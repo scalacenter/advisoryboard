@@ -1,4 +1,4 @@
-# Accessible Scala
+# SCP-016: Accessible Scala
 
 ## Proposer
 
