@@ -25,11 +25,9 @@ working groups.
 
 ## Costs
 
-There should be no direct costs associated with this proposal, however
-contracting work to external developers (e.g. through student projects) may be
-the most efficient way of achieving certain goals of the working groups.
+There should be no direct costs associated with this proposal.
 
 ## Timescales
 
-The required input should be 2-5 developer-days per week, split between
+The required input should be 5 developer-days per week, split between
 the two working groups, and dependent on developer availability, for one year.
