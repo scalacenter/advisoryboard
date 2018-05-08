@@ -22,7 +22,7 @@ current representatives are:
  - Lightbend: Adriaan Moors
  - Morgan Stanley: James Belsey
  - SAP: Thomas Gawlitza
- - Twitter: Stu Hood
+ - Twitter: Eugene Burmako
 
 ## Community Members
 
