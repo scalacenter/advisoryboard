@@ -8,7 +8,7 @@ majority of attendees, for example at a Scala conference.
 
  - Chairperson: Jon Pretty
  - Secretary: Seth Tisue
- - Executive Director: Heather Miller
+ - Executive Director: Sébastien Doeraene
  - Technical Advisor: Martin Odersky
 
 ## Sponsors
@@ -36,4 +36,3 @@ community. Currently, these are:
 
 The Scala Center may also invite other attendees to be present in meetings,
 particularly in order to provide specific technical advice on agenda items.
-
