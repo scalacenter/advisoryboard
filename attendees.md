@@ -22,6 +22,7 @@ current representatives are:
  - Lightbend: Adriaan Moors
  - Morgan Stanley: James Belsey
  - SAP: Thomas Gawlitza
+ - Spotify: Julien Tournay
  - Twitter: Eugene Burmako
 
 ## Community Members
