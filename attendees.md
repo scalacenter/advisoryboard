@@ -16,7 +16,7 @@ majority of attendees, for example at a Scala conference.
 Each Advisory Board Sponsor nominates a representative to the board. The
 current representatives are:
 
- - 47 Degrees: Raúl Raja Martínez
+ - 47 Degrees: Olga Makhasoeva
  - Goldman Sachs: Jonathan Perry
  - IBM: Frederick Reiss
  - Lightbend: Adriaan Moors
