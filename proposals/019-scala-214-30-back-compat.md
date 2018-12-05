@@ -20,10 +20,17 @@ Finally, as an important aside: backwards compatibility is the feature what woul
 ## Acceptance Criteria
 The `3 depends on 2` usecase can be considered satisfied when “Scala 3.0 code may be compiled to depend on unmodified Scala 2.14 binaries” without 1) significant performance regressions, 2) runtime errors that would usually be caught at compile time.
 
+To validate that the acceptance criteria have been met, two concrete artifacts would be useful:
+
+1. A large-scale compatibility study that measures a fraction of in-the-wild Scala 2 binaries that is consumable from Dotty (e.g. by expanding the Dotty community build to include additional projects with transitive dependencies on unmodified Scala 2 binaries).
+2. A compatibility reference (where for relevant features of Scala 2 that can appear in pickles, the documentation says to what extent Dotty supports consuming it).
+
 Due to the significant differences between the Scala 2 and Scala 3 compiler codebases, it is likely that some language features of Scala 2 can/should not be exposed to Scala 3. Additionally, since new Scala 3 consumers will be re-compiling their code during their upgrade, there is a slightly increased tolerance for unsupported patterns, particularly if there are consume-side workarounds. Nonetheless, the spirit of this proposal requires that a large fraction of unmodified Scala 2.14 binaries are naturally consumable from Scala 3.
 
 ## Cost
-This proposes refining an existing proposal, and should not represent any additional work: if anything, it should only narrow the scope and cost of the previously accepted effort.
+This proposal refines an existing proposal, but it also proposes concrete artifacts that might not have been in scope before.
+
+We estimate that the concrete artifacts of this proposal represent an additional 3 person-months of effort atop what was estimated for the first proposal. But we suspect that the portions of the existing proposal that have been de-prioritized by this refinement represent at least that much effort, and that this proposal is thus neutral in terms of effort required.
 
 ## Timescales
 2.14 development is slated to begin in Jan 2019, with a release by late 2020, early 2021.
