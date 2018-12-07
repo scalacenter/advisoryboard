@@ -1,0 +1,1 @@
+../proposals/020-sbt-transitive-dependencies-conflicts.md
