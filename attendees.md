@@ -23,7 +23,7 @@ current representatives are:
  - Morgan Stanley: James Belsey
  - SAP: Thomas Gawlitza
  - Spotify: Julien Tournay
- - Twitter: Eugene Burmako
+ - Twitter: Stu Hood
 
 ## Community Members
 
