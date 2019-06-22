@@ -6,7 +6,7 @@ majority of attendees, for example at a Scala conference.
 
 ## Officers
 
- - Chairperson: Jon Pretty
+ - Chairperson: (position vacant)
  - Secretary: Seth Tisue
  - Executive Director: Sébastien Doeraene
  - Technical Advisor: Martin Odersky
