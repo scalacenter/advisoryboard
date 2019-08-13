@@ -1,12 +1,15 @@
 # Advisory Board Meeting Attendees
 
-The Scala Center Advisory Board meets every quarter, typically by
-videoconference, but physically where a convenient opportunity arises for a
-majority of attendees, for example at a Scala conference.
+The Scala Center Advisory Board meets every quarter.
+
+Meeting are typically by videoconference, but sometimes physical when
+a convenient opportunity arises for a majority of attendees, for
+example at a Scala conference.  We should aim to meet in-person at
+least once a year.
 
 ## Officers
 
- - Chairperson: (position vacant)
+ - Chairperson: Stu Hood
  - Secretary: Seth Tisue
  - Executive Director: Sébastien Doeraene
  - Technical Advisor: Martin Odersky
@@ -16,7 +19,7 @@ majority of attendees, for example at a Scala conference.
 Each Advisory Board Sponsor nominates a representative to the board. The
 current representatives are:
 
- - 47 Degrees: Olga Makhasoeva
+ - 47 Degrees: Oli Makhasoeva
  - Goldman Sachs: Jonathan Perry
  - IBM: Frederick Reiss
  - Lightbend: Adriaan Moors
