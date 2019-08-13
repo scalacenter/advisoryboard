@@ -1,8 +1,11 @@
 # Advisory Board Meeting Attendees
 
-The Scala Center Advisory Board meets every quarter, typically by
-videoconference, but sometimes physically when a convenient opportunity arises for a
-majority of attendees, for example at a Scala conference.
+The Scala Center Advisory Board meets every quarter.
+
+Meeting are typically by videoconference, but sometimes physical when
+a convenient opportunity arises for a majority of attendees, for
+example at a Scala conference.  We should aim to meet in-person at
+least once a year.
 
 ## Officers
 

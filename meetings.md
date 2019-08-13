@@ -6,8 +6,33 @@ acting chair) and the secretary.
 
 ## Chairing
 
-Some miscellaneous advice, in no particular order, and much of it is
-perhaps obvious anyway:
+Some miscellaneous advice, in no particular order, and some of it
+perhaps obvious anyway.
+
+As an aside, note that historically, meetings were organized by a
+long-term chair.  The new plan is to rotate the chair annually.  This
+might imply we should do things a little differently, for example
+perhaps the Scala Center could handle a little more of the
+advance work, e.g. scheduling.
+
+### Scheduling
+
+The person responsible for scheduling the meeting should try to find a
+time suitable for everyone, though it's rarely possible that everyone
+can attend any given meeting.
+
+Priority should be given to the SC executive director, the technical
+adviser, the chairperson and the secretary, without whom the meeting
+can't really happen.
+
+If some other attendees are unable to attend on a particular time,
+priority should be given to those who are presenting proposals, and at
+the very least, an individual email should be sent to those members
+who are unavailable to check if they can delegate to someone
+else. With all else equal, any remaining toss-up between two dates
+should probably be decided in favor of any members who missed the
+previous meeting, and then in favor of those members who offered the
+greatest flexibility on their availability.
 
 ### Before
 
@@ -22,6 +47,8 @@ perhaps obvious anyway:
 ### Starting
 
 * Before beginning the meeting, start the recording.
+  Permission to make the recording should be sought from everyone present;
+  no one should ever be recorded without their knowledge and consent.
 * Make sure the recording clearly indicates who was present and
   which board members were absent, if any.
 
