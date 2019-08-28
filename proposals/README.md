@@ -54,7 +54,6 @@
 
 * proposed May 2017
 * **postponed**, after discussion
-* effectively now withdrawn, as of August 2019?
 
 # 012-improve-sbt-learning-materials.md
 
@@ -69,8 +68,10 @@
 # 014-production-ready-scalamacros.md
 
 * proposed and accepted September 2017
-* as of August 2019, abandoned in the context of Scala 2
-* **remains active** for Scala 3
+* **completed**, in the sense that designs were discussed, trials
+  were made, and conclusions were reached: no substantial changes
+  in Scala 2; design and implementation work on Scala 3 macros remains
+  ongoing at LAMP
 
 # 015-zinc-performance.md
 
