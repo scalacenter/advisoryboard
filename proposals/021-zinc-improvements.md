@@ -23,7 +23,12 @@ As the ecosystem prepares for Scala 3.x, we should ensure that Zinc continues to
 
 ### Fixing under-compilations
 
-There are known pain points in Scala 2.x in terms of under-compilation:
+The incremental compilation implemented by Zinc works conceptually as follows:
+
+1. During the first compilation, class-to-class relationships and signature info are recorded.
+2. During the second compilation onwards, initial sources are invalidated based on the timestamp change or the file watcher; and Zinc tries to calculate the minimal set of transitively invalidated sources are calculated based on the relationship analysis and heuristics.
+
+Invalidating more sources than necessary would lead to unnecessary work, called *over-compilation*; invalidating fewer source than necessary could lead to invalid programs, and we call them *under-compilation*. There are known pain points in Scala 2.x in terms of under-compilation:
 
 - Package objects
 - Wildcard imports
