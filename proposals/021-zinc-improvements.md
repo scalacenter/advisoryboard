@@ -69,7 +69,7 @@ Today, the public signature information is represented as various forms:
 - Zinc API info
 - TASTY
 
-Given the utility of signature information, we should standardize the representation of the signature information across Scala 2.13 and Scala 3.x and provide it via Zinc. Depending on the use case, different representation may have different degrees of details and/or performance characteristics for some operations.
+Given the utility of signature information, we should standardize the representation of the signature information across Scala 2.13 and Scala 3.x and provide it via Zinc. Depending on the use case, different representations may have different degrees of details and/or performance characteristics for some operations.
 
 Here are some goals for the standard signature info:
 
