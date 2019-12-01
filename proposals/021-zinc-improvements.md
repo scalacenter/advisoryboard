@@ -85,6 +85,8 @@ Here are some goals for the standard signature info:
 - Support deserialization back into the symbol table for separate compilation in Scala 2.13.
 - Support deserialization back into the symbol table for separate compilation in Scala 3.x.
 
+Side note: [SCP-018][18] proposed that Scala 2.14 and 3.0 both emit TASTY post-typer, "so that we may have one post-type checker compiler pipeline for both versions." This proposal is less ambitious in this aspect since it targets current 2.13 and 3.x series each having their own backends. It is similar in a sense that it calls for a standard signature representation that is able to express both Scala 2.13 type system and Scala 3.x type system, except here we do not specify the representation to be TASTY. The goal of 021 is to share tooling logic for separate compilation, incremental compilation, etc.
+
 ### Understanding Scala 3 impact to Zinc
 
 Incremental compilation is a challenging problem due to Scala’s expressive power It can be hard to predict how language changes will impact incremental compilation.
@@ -107,3 +109,5 @@ Unknown at this stage.
 ## Timescales
 
 Unknown at this stage.
+
+  [18]: https://github.com/scalacenter/advisoryboard/blob/ad92b6cb946d17031c367a4f479f5764b4f36b38/proposals/018-converging-214-30.md
