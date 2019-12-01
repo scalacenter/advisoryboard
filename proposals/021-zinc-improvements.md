@@ -57,9 +57,9 @@ In the Scala tooling ecosystem, the notion of outline types is emerging as a key
 
 Here are some of the cases for signature information (also known as API info):
 
-- Company-wide code browsing (Metadoc in Twitter).
 - Separate compilation by Scalac.
 - Incremental compilation by Zinc.
+- Reflective detection of test suites by sbt.
 - Build pipelining by starting the subproject builds earlier. (outline typing allows further parallelism)
 
 Today, the public signature information is represented as various forms:
