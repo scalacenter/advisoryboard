@@ -36,12 +36,13 @@ Invalidating more sources than necessary would lead to unnecessary work, called 
 - Implicit search
 - Default arguments
 - Name shadowing
+- Compile-time contants [zinc#227][227]
 
 Given known under-compilation issues in Zinc with regards to the above problem areas:
 
 - Could we reuse the name hashing heuristics to invalidate code arising from these under-compilation scenarios?
 - Given that the cost of under-compilation might be higher in some environments, could we introduce "strict mode" to Zinc such that it would err towards over-compilation? In the most extreme case, the "strict mode" may print a warning and invalidate any time it sees a wildcard import.
-- https://github.com/sbt/zinc/issues/559
+- [zinc#559][559]
 
 ### Propagating Zinc changes to build tools
 
@@ -111,3 +112,5 @@ Unknown at this stage.
 Unknown at this stage.
 
   [18]: https://github.com/scalacenter/advisoryboard/blob/ad92b6cb946d17031c367a4f479f5764b4f36b38/proposals/018-converging-214-30.md
+  [227]: https://github.com/sbt/zinc/issues/227
+  [559]: https://github.com/sbt/zinc/issues/559
