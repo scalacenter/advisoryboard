@@ -42,7 +42,7 @@ There are certain language features that leads to gotcha situation in incrementa
 
 ### Benchmark incremental compilation
 
-We propose to add incremental compilation performance to the current compiler benchmark to quantify performance improvements.
+We propose to add incremental compilation performance to the current [compiler benchmark][benchmark] to [quantify][dashboard] performance improvements.
 
 Suggested tests:
 - A single module with minimum library dependencies:
@@ -136,3 +136,5 @@ Unknown at this stage.
   [18]: https://github.com/scalacenter/advisoryboard/blob/ad92b6cb946d17031c367a4f479f5764b4f36b38/proposals/018-converging-214-30.md
   [227]: https://github.com/sbt/zinc/issues/227
   [559]: https://github.com/sbt/zinc/issues/559
+  [benchmark]: https://github.com/scala/compiler-benchmark
+  [dashboard]: https://scala-ci.typesafe.com/grafana/dashboard/db/scala-benchmark?orgId=1
