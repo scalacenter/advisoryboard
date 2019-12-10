@@ -28,7 +28,7 @@ There are certain language features that leads to gotcha situation in incrementa
 ## Expected outcome
 
 - Improved Zinc performance
-  - By Scala compiler and Zinc cooperating, there might be opportunities for speedup and memory usage reduction. Concretely, Zinc API Extraction phase (approx 5% of compilation time) could potentially be removed if we could reuse the information from an existing signature information.
+  - By Scala compiler and Zinc cooperating, there might be opportunities for speedup and memory usage reduction. Concretely, Zinc API Extraction phase (which can be 5% of compilation time) could potentially be removed if we could reuse the information from an existing signature information.
 - Improved correctness
   - By bringing compiler implementation specific details into Scala compiler, we expect better maintenance and test coverage over time. This applies to Dependency tracking phase.
   - When heuristics are used, there's a trade-off between over- and under-compilation (currently it focuses on local development). We should provide a knob to adjust this for CI usages.
