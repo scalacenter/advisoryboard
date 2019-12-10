@@ -36,9 +36,9 @@ There are certain language features that leads to gotcha situation in incrementa
 ## Proposal
 
 1. Benchmark incremental compilation
-1. Fixing under-compilations
+2. Fixing under-compilations
 3. Standardization of signature and outline types
-3. Propagating of Zinc to build tools
+4. Propagating of Zinc to build tools
 
 ### Benchmark incremental compilation
 
