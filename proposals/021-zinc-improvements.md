@@ -14,17 +14,6 @@ Zinc started its life as a module in sbt, outside of Scala. Closer coordination 
 
 As the ecosystem prepares for Scala 3.x, we should ensure that Zinc continues to function with the new compiler.
 
-## Background
-
-Both in local development and in CI (continuous integration) servers, Scala code is often built using one of build tools that internally uses Zinc. The incremental compilation implemented by Zinc works conceptually as follows:
-
-1. During the first compilation, class-to-class relationships and signature info are recorded.
-2. During the second compilation onwards, initial sources are invalidated based on the timestamp change (or the file watcher); and Zinc tries to calculate the minimal set of transitively invalidated sources based on the relationship analysis and heuristics.
-
-Invalidating more sources than necessary leads to unnecessary work, called *over-compilation*; invalidating fewer source than necessary can lead to invalid programs, and we call them *under-compilation*.
-
-There are certain language features that leads to gotcha situation in incremental compilation. For example, using wildcard import you might be able to trick name hashing to under compile.
-
 ## Expected outcome
 
 - Improved correctness
@@ -165,8 +154,58 @@ It would be nice to start the initial design meetings soon. There's no blocker f
 
 This task would take place after new Zinc comes out.
 
+
+## Background
+
+#### Under-compilation
+
+Both in local development and in CI (continuous integration) servers, Scala code is often built using one of build tools that internally uses Zinc. The incremental compilation implemented by Zinc works conceptually as follows:
+
+1. During the first compilation, class-to-class relationships and signature info are recorded.
+2. During the second compilation onwards, initial sources are invalidated based on the timestamp change (or the file watcher); and Zinc tries to calculate the minimal set of transitively invalidated sources based on the relationship analysis and heuristics.
+
+Invalidating more sources than necessary leads to unnecessary work, called *over-compilation*; invalidating fewer source than necessary can lead to invalid programs, and we call them *under-compilation*.
+
+There are certain language features that leads to gotcha situation in incremental compilation. For example, using wildcard import you might be able to trick name hashing to under compile.
+
+#### Components
+
+The following diagram describes the general relationships between the relevant components.
+
+```
++----------------------------------------------------+
+|                   build tool                       |
++---+------------------------------------------------+
+    |
+    |
++---v------+          +------------------------------+
+|          |          | compiler-interface           |
+|          +---------->                              |
+|          |          +------------------^-----------+
+|          +------+                      |
+|  Zinc    |      |                      |
+|          |  +---v--------+    +--------+-----------+
+|          |  |   Analysis <----+ compiler-bridge    |
+|          |  |   file     |    |                    |
+|          |  +------------+    +--------+-----------+
+|          |                             |
+|          |                             |
+|          |                    +--------v-----------+
+|          |                    | Scala compiler     |
++----------+                    +--------------------+
+```
+
+1. Build tools communicate only with Zinc. Zinc exposes a method called [`compile(...)`][1] and everything else is opaque to the build tools.
+2. To abstract over the Scala compiler implementations Zinc talks to the compilers via compiler-interface. We are moving this out of Zinc to [sbt/compiler-interface][2].
+3. A specific implementation of compiler-interface for a Scala compiler is called a compiler bridge. In Zinc 1.3, this resides in sbt/zinc, but we are planning to move that into scala/scala. See [scala/scala#8531][8531].
+4. During the compilation, the compiler-bridge generates metadata called `Analysis` file, which contains API info etc. This is later used by Zinc for incremental compilation. The content of `Analysis` file is meant to be an implementation detail of Zinc.
+5. As part of standardization, my hope is that build tools would acquire new capability to reflectively query for signatures via Zinc.
+
   [18]: https://github.com/scalacenter/advisoryboard/blob/ad92b6cb946d17031c367a4f479f5764b4f36b38/proposals/018-converging-214-30.md
   [227]: https://github.com/sbt/zinc/issues/227
   [559]: https://github.com/sbt/zinc/issues/559
   [benchmark]: https://github.com/scala/compiler-benchmark
   [dashboard]: https://scala-ci.typesafe.com/grafana/dashboard/db/scala-benchmark?orgId=1
+  [1]: https://github.com/sbt/zinc/blob/v1.3.1/internal/compiler-interface/src/main/java/xsbti/compile/IncrementalCompiler.java
+  [2]: https://github.com/sbt/compiler-interface
+  [8531]: https://github.com/scala/scala/pull/8531
