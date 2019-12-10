@@ -74,7 +74,9 @@ There are known pain points in Scala 2.x in terms of under-compilation:
 - Name shadowing
 - Compile-time constants [zinc#227][227]
 
-The proposed task is to add tests of incremental compilation in scala/scala repository, and provide fixes where possible. In a situation where heuristics might be used consider providing "strict" mode where it biases towards correctness and over-compilation.
+The proposed task is to add tests of incremental compilation in scala/scala repository and Scala 3.x, and provide fixes where possible.
+
+In a situation where heuristics might be used consider providing "strict" mode where it biases towards correctness and over-compilation.
 
 ### Standardization of signature info
 
