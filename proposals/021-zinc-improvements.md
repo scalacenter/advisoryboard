@@ -27,11 +27,11 @@ There are certain language features that leads to gotcha situation in incrementa
 
 ## Expected outcome
 
-- Improved Zinc performance
-  - By Scala compiler and Zinc cooperating, there might be opportunities for speedup and memory usage reduction. Concretely, Zinc API Extraction phase (which can be 5% of compilation time) could potentially be removed if we could reuse the information from an existing signature information.
 - Improved correctness
   - By bringing compiler implementation specific details into Scala compiler, we expect better maintenance and test coverage over time. This applies to Dependency tracking phase.
   - When heuristics are used, there's a trade-off between over- and under-compilation (currently it focuses on local development). We should provide a knob to adjust this for CI usages.
+- Improved Zinc performance
+  - By Scala compiler and Zinc cooperating, there might be opportunities for speedup and memory usage reduction. Concretely, Zinc API Extraction phase (which can be 5% of compilation time; your mileage may vary) could potentially be removed if we could reuse the information from an existing signature information.
 
 ## Proposal
 
@@ -93,7 +93,7 @@ Today, the public signature information is represented as various forms:
 - Zinc API info
 - TASTY
 
-During compilation, Zinc creates API info by adding _Extract API_ phase, which takes up approximately 5% of the compilation time. Although the information is useful to sbt (for both incremental compilation and reflective detection), there's an overlap of data with pickles / TASTY that seems wasteful.
+During compilation, Zinc creates API info by adding _Extract API_ phase (in a real-world setup this was observered to be approximately 5% of the compilation time; your mileage may vary). Although the information is useful to sbt (for both incremental compilation and reflective detection), there's an overlap of data with pickles / TASTY that seems wasteful.
 
 Given the utility of signature information, we should standardize the representation of the signature information across Scala 2.13 and Scala 3.x and provide it via Zinc. Depending on the use case, different representations may have different degrees of details and/or performance characteristics for some operations.
 
