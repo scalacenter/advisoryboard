@@ -127,11 +127,41 @@ As we make changes to Zinc either as bug patches or in a more major way in the f
 
 ## Cost
 
-Unknown at this stage.
+#### Benchmark incremental compilation
+
+Two part-time engineer months to add incremental compilation benchmarks to the existing compiler benchmarks.
+
+#### Fixing under-compilations
+
+Three full-time engineer months for the initial investigation of adding scripted tests to Scala 2.x and 3.x, and providing low-hanging fixes.
+
+Three additional full-time engineer months for more in-depth fixes or workarounds such as "strict" mode based on the initial findings.
+
+#### Standardization of signature info
+
+One part-time engineer month to coordinate initial design meetings. Six full-time engineer months to extend an existing signature representation as a replacement of Zinc API info.
+
+#### Propagating Zinc changes to build tools
+
+Three part-time engineer months to propagate new Zinc implementation to downstream build tools.
 
 ## Timescales
 
-Unknown at this stage.
+#### Benchmark incremental compilation
+
+This could start any time. To confirm performance speedup it would be beneficial to have some benchmarks prior to performance related works.
+
+#### Fixing under-compilations
+
+This is dependent on Lightbend completing the task of migrating the compiler bridge to scalac, which should be done by early 2020.
+
+#### Standardization of signature info
+
+It would be nice to start the initial design meetings soon. There's no blocker for that. If the design of TASTY is affected, this task needs to be addressed before Scala 3.0 becomes final.
+
+#### Propagating Zinc changes to build tools
+
+This task would take place after new Zinc comes out.
 
   [18]: https://github.com/scalacenter/advisoryboard/blob/ad92b6cb946d17031c367a4f479f5764b4f36b38/proposals/018-converging-214-30.md
   [227]: https://github.com/sbt/zinc/issues/227
