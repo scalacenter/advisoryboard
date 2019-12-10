@@ -28,7 +28,7 @@ There are certain language features that leads to gotcha situation in incrementa
 ## Expected outcome
 
 - Improved Zinc performance
-  - By Scala compiler and Zinc cooperating, there might be opportunities for speedup and memory usage reduction. Concretely, Zinc API Extraction phase (5% of compilation time) could potentially be removed if we could reuse the information from an existing signature information.
+  - By Scala compiler and Zinc cooperating, there might be opportunities for speedup and memory usage reduction. Concretely, Zinc API Extraction phase (approx 5% of compilation time) could potentially be removed if we could reuse the information from an existing signature information.
 - Improved correctness
   - By bringing compiler implementation specific details into Scala compiler, we expect better maintenance and test coverage over time. This applies to Dependency tracking phase.
   - When heuristics are used, there's a trade-off between over- and under-compilation (currently it focuses on local development). We should provide a knob to adjust this for CI usages.
@@ -45,22 +45,22 @@ There are certain language features that leads to gotcha situation in incrementa
 We propose to add incremental compilation performance to the current compiler benchmark to quantify performance improvements.
 
 Suggested tests:
-A single module with minimum library dependencies:
-Comparison of clean build using sbt vs scalac to measure the overhead of added phases.
-Incremental build twice without source changes to measure the overhead of no-op.
-Incremental build with source changes (add classes, add methods, change methods etc).
-A single module with a big library dependencies:
-Comparison of clean build using sbt vs scalac to measure the overhead of added phases.
-Incremental build twice without source changes to measure the overhead of no-op. This is relevant because Zinc performs classpath lookup for all library-associated classes to validate all library JARs.
-Incremental build with source changes (add classes, add methods, change methods etc).
-Multiple modules "core" and "app" with minimum library dependencies:
-Comparison of clean build using sbt vs scalac to measure the overhead of added phases.
-Incremental build twice without source changes to measure the overhead of no-op.
-Incremental build with source changes to "core" (add classes, add methods, change methods etc).
-Two single modules "core" and "app" that uses library dependencies to depend on "core":
-Comparison of clean build using sbt vs scalac to measure the overhead of added phases.
-Incremental build twice without source changes to measure the overhead of no-op.
-Incremental build with source changes to "core" (add classes, add methods, change methods etc) to emulate binary change.
+- A single module with minimum library dependencies:
+  - Comparison of clean build using sbt vs scalac to measure the overhead of added phases.
+  - Incremental build twice without source changes to measure the overhead of no-op.
+  - Incremental build with source changes (add classes, add methods, change methods etc).
+- A single module with a big library dependencies:
+  - Comparison of clean build using sbt vs scalac to measure the overhead of added phases.
+  - Incremental build twice without sources but with an added library. This is relevant because Zinc performs classpath lookup for all library-associated classes to validate all library JARs.
+  - Incremental build with source changes (add classes, add methods, change methods etc).
+- Multiple modules "core" and "app" with minimum library dependencies:
+  - Comparison of clean build using sbt vs scalac to measure the overhead of added phases.
+  - Incremental build twice without source changes to measure the overhead of no-op.
+  - Incremental build with source changes to "core" (add classes, add methods, change methods etc).
+- Two single modules "core" and "app" that uses library dependencies to depend on "core":
+  - Comparison of clean build using sbt vs scalac to measure the overhead of added phases.
+  - Incremental build twice without source changes to measure the overhead of no-op.
+  - Incremental build with source changes to "core" (add classes, add methods, change methods etc) to emulate binary change.
 
 ### Fixing under-compilations
 
