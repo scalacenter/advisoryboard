@@ -14,24 +14,19 @@ Zinc started its life as a module in sbt, outside of Scala. Closer coordination 
 
 As the ecosystem prepares for Scala 3.x, we should ensure that Zinc continues to function with the new compiler.
 
-## Expected outcome
-
-- Improved correctness
-  - By bringing compiler implementation specific details into Scala compiler, we expect better maintenance and test coverage over time. This applies to Dependency tracking phase.
-  - When heuristics are used, there's a trade-off between over- and under-compilation (currently it focuses on local development). We should provide a knob to adjust this for CI usages.
-- Improved Zinc performance
-  - By Scala compiler and Zinc cooperating, there might be opportunities for speedup and memory usage reduction. Concretely, Zinc API Extraction phase (which can be 5% of compilation time; your mileage may vary) could potentially be removed if we could reuse the information from an existing signature information.
-
 ## Proposal
 
-1. Benchmark incremental compilation
-2. Fixing under-compilations
-3. Standardization of signature and outline types
-4. Propagating of Zinc to build tools
+- Improve Scala 2.x compilation performance and correctness
+- Ensuring that Zinc continues to work with Scala 3
+- Work toward a design solution that achieves the above
+
+## Discussion
+
+The following is a recommendation of activities that could take place provided as a guideline to give ideas about the proposed work. This is not required this as an acceptance criterion for the proposed work.
 
 ### Benchmark incremental compilation
 
-We propose to add incremental compilation performance to the current [compiler benchmark][benchmark] to [quantify][dashboard] performance improvements.
+We suggest to add incremental compilation performance to the current [compiler benchmark][benchmark] to [quantify][dashboard] performance improvements.
 
 Suggested tests:
 - A single module with minimum library dependencies:
@@ -63,49 +58,27 @@ There are known pain points in Scala 2.x in terms of under-compilation:
 - Name shadowing
 - Compile-time constants [zinc#227][227]
 
-The proposed task is to add tests of incremental compilation in scala/scala repository and Scala 3.x, and provide fixes where possible.
+The suggested task is to add tests of incremental compilation in scala/scala repository and Scala 3.x, and provide fixes where possible.
 
-In a situation where heuristics might be used consider providing "strict" mode where it biases towards correctness and over-compilation.
+### Understanding Scala 3 impact to Zinc
 
-### Standardization of signature info
+In this report the following questions should be answered:
 
+- How do Scala 3’s features affect incremental compilation? In other words, what are the different source-to-source dependencies in Scala 3.x?
+- In each of the scenario, how does source change affect recompilation and/or binary substitution.
+- Are there language changes we can make to improve incremental compilation performance/correctness?
 
-Here are some of the use cases for signature information (also known as API info):
-
-- Separate compilation by Scalac.
-- Incremental compilation by Zinc.
-- Reflective detection of test suites by sbt.
-- Build pipelining by starting the subproject builds earlier. (outline typing allows further parallelism)
-
-Today, the public signature information is represented as various forms:
-
-- Semanticdb
-- Scala pickle in `*.class` file
-- Zinc API info
-- TASTY
+### Replace Zinc API info
 
 During compilation, Zinc creates API info by adding _Extract API_ phase (in a real-world setup this was observered to be approximately 5% of the compilation time; your mileage may vary). Although the information is useful to sbt (for both incremental compilation and reflective detection), there's an overlap of data with pickles / TASTY that seems wasteful.
 
-Given the utility of signature information, we should standardize the representation of the signature information across Scala 2.13 and Scala 3.x and provide it via Zinc. Depending on the use case, different representations may have different degrees of details and/or performance characteristics for some operations.
+One possible solution is Scala 2.x uses Scala pickles, Scala 3.x uses TASTY both providing the feature currently provided by Zinc API info (API hashing, reflective querying).
 
-Here is the scoring criteria for the standard signature info:
+### Propagating Zinc changes to build tools and Scala 3.x
 
-- Can query for all types that extends some type X.
-- Can query for all types that extends with annotation Y.
-- Store hash values for public signatures and private signatures.
-- Represent normal (post-typer) public signature info for Scala 2.13.
-- Represent normal (post-typer) public signature info for Scala 3.x.
+Currently Scala 3.x contains its own compiler bridge. As we make changes to Zinc either as bug patches or in a more major way in the future, we should make sure to bring it along so they do not lag behind.
 
-- Support deserialization back into the symbol table for separate compilation in Scala 2.13.
-- Support deserialization back into the symbol table for separate compilation in Scala 3.x.
-
-One possible solution is Scala 2.x uses Scala pickles, Scala 3.x uses TASTY both providing the feature currently provided by Zinc API info (API hashing, reflective querying). In that case, Lightbend Scala team will work on Scala pickles, and Scala Center could work on TASTY.
-
-Side note: [SCP-018][18] proposed that Scala 2.14 and 3.0 both emit TASTY post-typer, "so that we may have one post-type checker compiler pipeline for both versions." This proposal is less ambitious in this aspect since it targets current 2.13 and 3.x series each having their own backends. It is similar in the sense that it calls for a standard signature representation that is able to express both Scala 2.13 type system and Scala 3.x type system. The goal of 021 is to share tooling logic for separate compilation, incremental compilation, etc.
-
-### Propagating Zinc changes to build tools
-
-Here are some of the build tools that use Zinc:
+Similarly, we should make sure to bring downstream build tools along so they do not lag behind. Here are some of the build tools that use Zinc:
 
 - sbt
 - Bloop
@@ -114,46 +87,15 @@ Here are some of the build tools that use Zinc:
 - Mill
 - Pants
 
-As we make changes to Zinc either as bug patches or in a more major way in the future, we should make sure to bring the various downstream build tools along so they do not lag behind. The proposed task is to send pull requests to the downstream build tools.
-
 ## Cost
 
-#### Benchmark incremental compilation
+3 full-time engineer month to coordinate and participate in the design and prototyping of a solution for Zinc support across Scala versions. At least the design aspect should be done in collaboration with the relevant maintainers.
 
-Two part-time engineer months to add incremental compilation benchmarks to the existing compiler benchmarks.
-
-#### Fixing under-compilations
-
-Three full-time engineer months for the initial investigation of adding scripted tests to Scala 2.x and 3.x, and providing low-hanging fixes.
-
-Three additional full-time engineer months for more in-depth fixes or workarounds such as "strict" mode based on the initial findings.
-
-#### Standardization of signature info
-
-One part-time engineer month to coordinate initial design meetings. Six full-time engineer months to extend an existing signature representation as a replacement of Zinc API info.
-
-#### Propagating Zinc changes to build tools
-
-Three part-time engineer months to propagate new Zinc implementation to downstream build tools.
+On the condition that the initial design has been completed, additional 12 full-time engineering months for the implementation and maintenance tasks.
 
 ## Timescales
 
-#### Benchmark incremental compilation
-
-This could start any time. To confirm performance speedup it would be beneficial to have some benchmarks prior to performance related works.
-
-#### Fixing under-compilations
-
-This is dependent on Lightbend completing the task of migrating the compiler bridge to scalac, which should be done by early 2020.
-
-#### Standardization of signature info
-
-It would be nice to start the initial design meetings soon. There's no blocker for that. If the design of TASTY is affected, this task needs to be addressed before Scala 3.0 becomes final.
-
-#### Propagating Zinc changes to build tools
-
-This task would take place after new Zinc comes out.
-
+The initial design should start sooner rather than later.
 
 ## Background
 
