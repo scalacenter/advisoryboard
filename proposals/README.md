@@ -14,6 +14,9 @@
 
 * proposed and accepted May 2016
 * **completed** by the addition of the "community manager" staff position
+* (but now, as of late 2019, instead of an "executive director" and a
+  "community manager", we have an "executive director" and a
+  "technical director")
 
 # 004-sip-and-slip-coordination.md
 
@@ -53,7 +56,8 @@
 # 011-debugging-symbols.md
 
 * proposed May 2017
-* **postponed**, after discussion
+* was postponed, after discussion
+* **superseded** by a sequel proposal: SCP-022
 
 # 012-improve-sbt-learning-materials.md
 
@@ -92,7 +96,11 @@
 # 018-converging-214-30.md
 
 * proposed and accepted September 2018
-* **remains active**
+* **remains active**, but in modified form: Scala 2.14
+  is no longer planned; Dotty is already able to consume
+  Scala 2 artifacts; and the Center is currently (as of February 2020)
+  working on modifying Scala 2.13 to read TASTy so it can
+  consume Scala 3 artifacts
 
 # 019-scala-214-30-back-compat.md
 
@@ -101,4 +109,14 @@
 # 020-sbt-transitive-dependencies-conflicts.md
 
 * proposed and accepted December 2018
+* **completed**; see https://www.scala-lang.org/2019/10/17/dependency-management.html
+
+# 021-zinc-improvements.md
+
+* proposed and accepted December 2019
+* **remains active**
+
+# 022-jsr-45.md
+
+* proposed and accepted December 2019
 * **remains active**
