@@ -109,7 +109,7 @@
 # 020-sbt-transitive-dependencies-conflicts.md
 
 * proposed and accepted December 2018
-* **remains active**; see September 2019 minutes for latest status
+* **completed**; see https://www.scala-lang.org/2019/10/17/dependency-management.html
 
 # 021-zinc-improvements.md
 
