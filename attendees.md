@@ -23,7 +23,7 @@ current representatives are:
  - 47 Degrees: Oli Makhasoeva
  - Goldman Sachs: Jonathan Perry
  - Lightbend: Adriaan Moors
- - Lunatech: Erik Bakker
+ - Lunatech: Chris Kipp
  - Morgan Stanley: James Belsey
  - SAP: Thomas Gawlitza
  - Spotify: Julien Tournay
