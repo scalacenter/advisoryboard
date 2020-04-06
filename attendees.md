@@ -21,7 +21,7 @@ Each Advisory Board Sponsor nominates a representative to the board. The
 current representatives are:
 
  - 47 Degrees: Oli Makhasoeva
- - Goldman Sachs: Jonathan Perry
+ - Goldman Sachs: Alex Hurst / Graham Griffiths
  - Lightbend: Adriaan Moors
  - Lunatech: Chris Kipp
  - Morgan Stanley: James Belsey
