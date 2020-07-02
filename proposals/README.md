@@ -125,3 +125,8 @@
 
 * proposed and accepted March 2020
 * **remains active**
+
+# 024-diversity.md
+
+* proposed and accepted June 2020
+* **remains active**
