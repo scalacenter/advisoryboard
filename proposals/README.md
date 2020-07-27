@@ -96,10 +96,9 @@
 # 018-converging-214-30.md
 
 * proposed and accepted September 2018
-* **remains active**, but in modified form: Scala 2.14
+* **completed**, but in modified form: Scala 2.14
   is no longer planned; Dotty is already able to consume
-  Scala 2 artifacts; and the Center is currently (as of February 2020)
-  working on modifying Scala 2.13 to read TASTy so it can
+  Scala 2 artifacts; and the Center has completed a modification of Scala 2.13 to read TASTy so it can
   consume Scala 3 artifacts
 
 # 019-scala-214-30-back-compat.md
