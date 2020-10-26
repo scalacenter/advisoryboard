@@ -24,15 +24,11 @@ The Scala Center should identify the use of such terms and discuss a replacement
 Some example actions to address them could include:
 
 **Code Changes**
-- Create pull requests that propose an alternative to the offensive term.
-- Change the structure of a project, such as its branch names and CI configuration
+- Create pull requests for the projects maintained by the Scala Center to propose an alternative to the offensive term.
+- Change their structure if needed, such as branch names and CI configuration
 
 **Documentation**
-- Revise its documentation and replace the oppressive language where possible and without compromising its understanding.
-
-**Projects in the Community Build**
-- Encourage projects that are part of the Community Build to remove any offensive term from their codebase and documentation.
-- If needed, actively support those projects by creating pull requests to address the oppressive language.
+- Revise their documentation and replace the oppressive language where possible and without compromising its understanding.
 
 ### Actively Encourage the Use of Inclusive Language
 The Scala Center should avoid using the identified oppressive language in all future communications, both on its Forum and Social Media.
