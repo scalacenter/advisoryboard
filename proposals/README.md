@@ -123,7 +123,7 @@
 # 023-bsp.md
 
 * proposed and accepted March 2020
-* **remains active**
+* **completed**; see https://www.scala-lang.org/blog/2020/10/27/bsp-in-sbt.html
 
 # 024-diversity.md
 
