@@ -129,3 +129,8 @@
 
 * proposed and accepted June 2020
 * **remains active**
+
+# 025-inclusive-language.md
+
+* proposed and accepted October 2020
+* **remains active**
