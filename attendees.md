@@ -9,7 +9,7 @@ least once a year.
 
 ## Officers
 
- - Chairperson: Stu Hood
+ - Chairperson: Adriaan Moors
  - Secretary: Seth Tisue
  - Executive Director: Darja Jovanovic
  - Technical Director: Sébastien Doeraene
@@ -20,14 +20,13 @@ least once a year.
 Each Advisory Board Sponsor nominates a representative to the board. The
 current representatives are:
 
- - 47 Degrees: Oli Makhasoeva
+ - 47 Degrees: Maureen Elsberry
  - Goldman Sachs: Alex Hurst / Graham Griffiths
  - Lightbend: Adriaan Moors
  - Lunatech: Chris Kipp
- - Morgan Stanley: James Belsey
- - SAP: Thomas Gawlitza
+ - Morgan Stanley: Daniela Sfregola
  - Spotify: Julien Tournay
- - Twitter: Stu Hood
+ - Twitter: Eugene Yokota
  - VirtusLab: Krzysztof Romanowski
 
 ## Community Members
