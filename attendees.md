@@ -17,10 +17,12 @@ least once a year.
 
 ## Sponsors
 
-Each Advisory Board Sponsor nominates a representative to the board. The
-current representatives are:
+Each Advisory Board Sponsor nominates a representative to the board.
+(Sometimes two, to ensure coverage; but they share one vote.)
 
- - 47 Degrees: Maureen Elsberry
+The current representatives are:
+
+ - 47 Degrees: Maureen Elsberry / Diego E. Alonso Blas
  - Goldman Sachs: Alex Hurst / Graham Griffiths
  - Lightbend: Adriaan Moors
  - Lunatech: Chris Kipp
