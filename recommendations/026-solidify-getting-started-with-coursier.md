@@ -1,0 +1,1 @@
+../proposals/026-solidify-getting-started-with-coursier.md
