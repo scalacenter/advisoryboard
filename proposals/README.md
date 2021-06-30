@@ -134,3 +134,8 @@
 
 * proposed and accepted October 2020
 * **remains active**
+
+# 026-solidify-getting-started-with-coursier.md
+
+* proposed and accepted June 2021
+* **remains active**
