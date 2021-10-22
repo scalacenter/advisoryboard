@@ -28,7 +28,7 @@ The current representatives are:
  - Lightbend: Adriaan Moors
  - Lunatech: Chris Kipp
  - Morgan Stanley: Daniela Sfregola
- - Spotify: Julien Tournay
+ - Spotify: Claire McGinty
  - Twitter: Eugene Yokota
  - VirtusLab: Krzysztof Romanowski
 
