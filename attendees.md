@@ -9,7 +9,7 @@ least once a year.
 
 ## Officers
 
- - Chairperson: Adriaan Moors
+ - Chairperson: (awaiting election at November 10 meeting)
  - Secretary: Seth Tisue
  - Executive Director: Darja Jovanovic
  - Technical Director: Sébastien Doeraene
@@ -25,7 +25,7 @@ The current representatives are:
  - 47 Degrees: Maureen Elsberry / Diego E. Alonso Blas
  - Databricks: Kris Mok
  - Goldman Sachs: Alex Hurst / Graham Griffiths
- - Lightbend: Adriaan Moors
+ - Lightbend: Lukas Rytz
  - Lunatech: Chris Kipp
  - Morgan Stanley: Daniela Sfregola
  - Spotify: Claire McGinty
