@@ -9,11 +9,13 @@ least once a year.
 
 ## Officers
 
- - Chairperson: (awaiting election at November 10 meeting)
+ - Chairperson: Chris Kipp
  - Secretary: Seth Tisue
  - Executive Director: Darja Jovanovic
  - Technical Director: Sébastien Doeraene
  - Technical Advisor: Martin Odersky
+
+We customarily rotate the position of chairperson annually.
 
 ## Sponsors
 
@@ -43,4 +45,4 @@ community. Currently, these are:
 ## Other Attendees
 
 The Scala Center may also invite other attendees to be present in meetings,
-particularly in order to provide specific technical advice on agenda items.
+particularly in order to provide information or advice on particular agenda items.
