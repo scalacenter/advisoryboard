@@ -39,7 +39,7 @@ greatest flexibility on their availability.
 * Send out the meeting agenda a few days ahead of time, to give
   the board time to consider topics in advance.
 * The chair or secretary should also upload the agenda to
-  https://github.com/scalacenter/advisoryboard/tree/master/agendas
+  https://github.com/scalacenter/advisoryboard/tree/main/agendas
 * Before the meeting begins, review the agenda and arrive at a rough
   idea of how long each part of the meeting should take, in order to
   fit everything in.

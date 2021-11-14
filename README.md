@@ -19,7 +19,7 @@ consideration only by
  - community members,
 
 and should be made via a pull-request adding a new Markdown file to the
-[proposals](https://github.com/scalacenter/advisoryboard/tree/master/proposals)
+[proposals](https://github.com/scalacenter/advisoryboard/tree/main/proposals)
 directory.  The proposal should be assigned the next available Scala Center
 Proposal (SCP) number in sequence, and the file should be named
 `nnn-<description>.md`, where `nnn` is the SCP number, padded with zeroes, and
@@ -27,28 +27,28 @@ Proposal (SCP) number in sequence, and the file should be named
 proposal.
 
 Proposals should follow the format and sections laid out in the [template
-proposal](https://github.com/scalacenter/advisoryboard/tree/master/templates/proposal.md),
+proposal](https://github.com/scalacenter/advisoryboard/tree/main/templates/proposal.md),
 and should be concise enough to fit on a single side of paper if printed out.
 
 ## Recommendations
 
 Once a proposal has been adopted by the Advisory Board, it will become a
 recommendation, and should be copied, noting any amendments, into the
-[recommendations](https://github.com/scalacenter/advisoryboard/tree/master/recommendations)
+[recommendations](https://github.com/scalacenter/advisoryboard/tree/main/recommendations)
 directory.
 
 ## Invitations
 
 For reference, invitations sent to each Advisory Board representative are
 included in the 
-[invitations](https://github.com/scalacenter/advisoryboard/tree/master/invitations)
+[invitations](https://github.com/scalacenter/advisoryboard/tree/main/invitations)
 directory.
 
 ## Agendas
 
 Agendas for each Advisory Board meeting shall be made available online at least
 five days before the meeting takes place, and shall reside in the
-[agendas](https://github.com/scalacenter/advisoryboard/tree/master/agendas)
+[agendas](https://github.com/scalacenter/advisoryboard/tree/main/agendas)
 directory, under the filename `xxx-yyyy-qz.md`, where `xxx` represents the
 meeting number, `yyyy` represents the year and `z` represents the quarter (1,
 2, 3 or 4).
