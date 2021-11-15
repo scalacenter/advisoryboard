@@ -139,3 +139,8 @@
 
 * proposed and accepted June 2021
 * **remains active**
+
+# 027-refactoring.md
+
+* proposed, then withdrawn for revision in November 2021
+* **awaiting revision**
