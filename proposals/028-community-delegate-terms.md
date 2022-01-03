@@ -2,7 +2,7 @@
 
 ## Proposer
 
-Proposed by Rob Norris and Bill Venners, community members, 3-Jan 2022.
+Proposed by Rob Norris and Bill Venners, community delegates, 3-Jan 2022.
 
 ## Abstract
 
