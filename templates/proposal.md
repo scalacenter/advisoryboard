@@ -1,3 +1,7 @@
+---
+date: [Date of Proposal]
+---
+
 # [Title of the Proposal]
 
 ## Proposer

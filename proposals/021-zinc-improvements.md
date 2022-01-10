@@ -1,3 +1,9 @@
+---
+date: December 2019
+accepted: true
+status: active
+---
+
 # SCP-021: Zinc improvements
 
 ## Proposer

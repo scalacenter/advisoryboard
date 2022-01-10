@@ -1,3 +1,11 @@
+---
+date: December 2018
+accepted: true
+updates:
+  - see https://www.scala-lang.org/2019/10/17/dependency-management.html
+status: completed
+---
+
 # SBT transitive dependency conflicts management improvements
 
 ## Proposer

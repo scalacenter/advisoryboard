@@ -1,3 +1,11 @@
+---
+date: August 2016
+accepted: true
+updates:
+  - Completed in 2016
+status: completed
+---
+
 # SCP-006: Compile Time Check of Serializability
 
 ## Proposer

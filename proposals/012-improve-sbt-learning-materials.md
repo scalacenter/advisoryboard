@@ -1,3 +1,11 @@
+---
+date: May 2017
+accepted: false
+updates:
+  - Withdrawn after discussion
+status: withdrawn
+---
+
 # Improve Resources for Learning SBT
 
 ## Proposer

@@ -1,3 +1,11 @@
+---
+date: September 2017
+accepted: true
+updates:
+  - In the sense that designs were discussed, trials were made, and conclusions were reached: no substantial changes in Scala 2; design and implementation work on Scala 3 macros remains ongoing at LAMP
+status: completed
+---
+
 # SCP-014: Production ready scalamacros/scalamacros
 
 ## Proposer

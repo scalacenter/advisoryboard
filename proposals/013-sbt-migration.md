@@ -1,3 +1,11 @@
+---
+date: September 2017
+accepted: true
+updates:
+  - Migration largely complete as of August 2019
+status: completed
+---
+
 # SCP-013: Aid the ecosystem in upgrading to sbt 1.0.x
 
 ## Proposer

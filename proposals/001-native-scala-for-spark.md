@@ -1,3 +1,13 @@
+---
+date: May 2016
+accepted: true
+updates:
+  - deferred for later consideration
+  - considered again and accepted August 2016
+  - dormant no recent activity as of August 2019
+status: dormant
+---
+
 # SCP-001: Native Execution of Scala/Spark via LLVM
 
 ## Proposer

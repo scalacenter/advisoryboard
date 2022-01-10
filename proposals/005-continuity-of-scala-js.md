@@ -1,3 +1,11 @@
+---
+date: May 2016
+accepted: true
+updates:
+  - Remains active as of August 2019
+status: active
+---
+
 # SCP-005: Ensurance of continuity of Scala.js project
 
 ## Note

@@ -30,12 +30,35 @@ Proposals should follow the format and sections laid out in the [template
 proposal](https://github.com/scalacenter/advisoryboard/tree/main/templates/proposal.md),
 and should be concise enough to fit on a single side of paper if printed out.
 
-## Recommendations
+### Recommendations
 
 Once a proposal has been adopted by the Advisory Board, it will become a
 recommendation, and should be copied, noting any amendments, into the
 [recommendations](https://github.com/scalacenter/advisoryboard/tree/main/recommendations)
 directory.
+
+### Proposals status
+
+To see the up-to-date status of a proposal see the
+[proposals/README](./proposals/README.md) which holds a summary of updates and
+statuses of all proposals.
+
+_NOTE_: This proposals/README.md file is auto-generated, so if you need to add
+an update or change the status of a proposal make sure to do so in the heading
+of the proposal file. The possible headings are:
+
+```yaml
+date: date proposed
+accepted: true, yes, false, no
+updates:
+  - postponed until next meeting
+  - accepted after discussion
+  - Updates found at https://www.scala-lang.org/blog/
+status: completed, postponed, active, etc
+```
+
+To regenerate the proposals/README.md file run `scala-cli run bin/` from the
+root of this project.
 
 ## Invitations
 

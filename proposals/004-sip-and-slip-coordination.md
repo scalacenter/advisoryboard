@@ -1,3 +1,11 @@
+---
+date: May 2016
+accepted: true
+updates:
+  - SIP coordinator is Darja
+status: active
+---
+
 # SCP-004: Center to coordinate SIP/SLIP process
 
 ## Note

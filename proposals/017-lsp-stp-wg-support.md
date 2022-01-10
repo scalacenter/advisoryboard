@@ -1,3 +1,12 @@
+---
+date: March 2018
+accepted: true
+updates:
+  - Working groups are dormant
+  - Engineering work remains active
+status: dormant/active
+---
+
 # Scala Center Support for LSP and STP Working Groups
 
 ## Proposer
