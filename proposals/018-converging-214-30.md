@@ -1,3 +1,11 @@
+---
+date: September 2018
+accepted: true
+updates:
+  - Completed, but in modified form: Scala 2.14 is no longer planned; Dotty is already able to consume Scala 2 artifacts; and the Center has completed a modification of Scala 2.13 to read TASTy so it can consume Scala 3 artifacts
+status: completed
+---
+
 # SCP-018: Converging the Intermediate Representation of Scala 2.14 and Scala 3.0
 
 ## Proposer

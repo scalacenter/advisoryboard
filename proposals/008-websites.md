@@ -1,3 +1,9 @@
+---
+date: November 2016
+accepted: true
+status: active
+---
+
 # SCP-008: Maintain scala-lang, docs.scala-lang, scala.epfl.ch websites
 
 ## Proposer

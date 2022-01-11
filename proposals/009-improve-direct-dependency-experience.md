@@ -1,3 +1,11 @@
+---
+date: November 2016
+accepted: true
+updates:
+  - Completed in 2017
+status: completed
+---
+
 # SCP-009: Improve user experience for builds that use only direct dependencies
 
 ## Proposer

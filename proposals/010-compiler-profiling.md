@@ -1,3 +1,11 @@
+---
+date: May 2017
+accepted: true
+updates:
+  - Completed in 2018
+status: completed
+---
+
 # Providing Better Compilation Performance Information
 
 ## Proposer

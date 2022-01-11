@@ -1,3 +1,11 @@
+---
+date: November 2016
+accepted: true
+updates:
+  - Completed in 2019 with the release of 2.13
+status: completed
+---
+
 # SCP-007: Collaborative redesign and implementation of Scala 2.13's collections library.
 
 ## Proposer

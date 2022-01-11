@@ -1,3 +1,9 @@
+---
+date: June 2021
+accepted: true
+status: active
+---
+
 # Solidify Getting Started with Coursier
 
 ## Proposer

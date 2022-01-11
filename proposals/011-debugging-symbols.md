@@ -1,3 +1,12 @@
+---
+date: May 2017
+accepted: false
+updates:
+  - Was postponed after discussion
+  - Superseded by a sequel proposal: SCP-022
+status: superseded
+---
+
 # Debugging Position Information
 
 ## Proposer

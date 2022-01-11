@@ -1,3 +1,9 @@
+---
+date: October 2020
+accepted: true
+status: active
+---
+
 # SCP-025: Use of Inclusive Language
 
 ## Proposer

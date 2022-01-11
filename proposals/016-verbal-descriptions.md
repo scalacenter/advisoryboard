@@ -1,3 +1,11 @@
+---
+date: March 2018
+accepted: true
+updates:
+  - Completed in 2018
+status: completed
+---
+
 # SCP-016: Accessible Scala
 
 ## Proposer

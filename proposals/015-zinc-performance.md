@@ -1,3 +1,11 @@
+---
+date: September 2017
+accepted: true
+updates:
+  - Completed in 2018
+status: completed
+---
+
 # SCP-015: Improving performance and profiling of Zinc
 
 ## Proposer

@@ -1,146 +1,150 @@
-# 001-native-scala-for-spark.md
+# [001-native-scala-for-spark.md](./001-native-scala-for-spark.md)
+* Date proposed: May 2016
+* Accepted: yes
+* Updates:
+	* deferred for later consideration
+	* considered again and accepted August 2016
+	* dormant no recent activity as of August 2019
+* Status: **dormant**
+# [002-dotty-migration-path.md](./002-dotty-migration-path.md)
+* Date proposed: May 2016
+* Accepted: yes
+* Updates:
+	* Remains active as of August 2019
+* Status: **active**
+# [003-scala-center-publicity-chair.md](./003-scala-center-publicity-chair.md)
+* Date proposed: May 2016
+* Accepted: yes
+* Updates:
+	* Remains active as of August 2019
+* Status: **active**
+# [004-sip-and-slip-coordination.md](./004-sip-and-slip-coordination.md)
+* Date proposed: May 2016
+* Accepted: yes
+* Updates:
+	* SIP coordinator is Darja
+* Status: **active**
+# [005-continuity-of-scala-js.md](./005-continuity-of-scala-js.md)
+* Date proposed: May 2016
+* Accepted: yes
+* Updates:
+	* Remains active as of August 2019
+* Status: **active**
+# [006-compile-time-serializibility-check.md](./006-compile-time-serializibility-check.md)
+* Date proposed: August 2016
+* Accepted: yes
+* Updates:
+	* Completed in 2016
+* Status: **completed**
+# [007-collections.md](./007-collections.md)
+* Date proposed: November 2016
+* Accepted: yes
+* Updates:
+	* Completed in 2019 with the release of 2.13
+* Status: **completed**
+# [008-websites.md](./008-websites.md)
+* Date proposed: November 2016
+* Accepted: yes
+* Status: **active**
+# [009-improve-direct-dependency-experience.md](./009-improve-direct-dependency-experience.md)
+* Date proposed: November 2016
+* Accepted: yes
+* Updates:
+	* Completed in 2017
+* Status: **completed**
+# [010-compiler-profiling.md](./010-compiler-profiling.md)
+* Date proposed: May 2017
+* Accepted: yes
+* Updates:
+	* Completed in 2018
+* Status: **completed**
+# [011-debugging-symbols.md](./011-debugging-symbols.md)
+* Date proposed: May 2017
+* Accepted: no
+* Updates:
+	* Was postponed after discussion
+	* Superseded by a sequel proposal: SCP-022
+* Status: **superseded**
+# [012-improve-sbt-learning-materials.md](./012-improve-sbt-learning-materials.md)
+* Date proposed: May 2017
+* Accepted: no
+* Updates:
+	* Withdrawn after discussion
+* Status: **withdrawn**
+# [013-sbt-migration.md](./013-sbt-migration.md)
+* Date proposed: September 2017
+* Accepted: yes
+* Updates:
+	* Migration largely complete as of August 2019
+* Status: **completed**
+# [014-production-ready-scalamacros.md](./014-production-ready-scalamacros.md)
+* Date proposed: September 2017
+* Accepted: yes
+* Updates:
+	* In the sense that designs were discussed, trials were made, and conclusions were reached: no substantial changes in Scala 2; design and implementation work on Scala 3 macros remains ongoing at LAMP
+* Status: **completed**
+# [015-zinc-performance.md](./015-zinc-performance.md)
+* Date proposed: September 2017
+* Accepted: yes
+* Updates:
+	* Completed in 2018
+* Status: **completed**
+# [016-verbal-descriptions.md](./016-verbal-descriptions.md)
+* Date proposed: March 2018
+* Accepted: yes
+* Updates:
+	* Completed in 2018
+* Status: **completed**
+# [017-lsp-stp-wg-support.md](./017-lsp-stp-wg-support.md)
+* Date proposed: March 2018
+* Accepted: yes
+* Updates:
+	* Working groups are dormant
+	* Engineering work remains active
+* Status: **dormant/active**
+# [018-converging-214-30.md](./018-converging-214-30.md)
+* Date proposed: September 2018
+* Accepted: yes
+* Updates:
+	* Completed, but in modified form: Scala 2.14 is no longer planned; Dotty is already able to consume Scala 2 artifacts; and the Center has completed a modification of Scala 2.13 to read TASTy so it can consume Scala 3 artifacts
+* Status: **completed**
+# [019-scala-214-30-back-compat.md](./019-scala-214-30-back-compat.md)
+* Date proposed: September 2018
+* Accepted: no
+# [020-sbt-transitive-dependencies-conflicts.md](./020-sbt-transitive-dependencies-conflicts.md)
+* Date proposed: December 2018
+* Accepted: yes
+* Updates:
+	* see https://www.scala-lang.org/2019/10/17/dependency-management.html
+* Status: **completed**
+# [021-zinc-improvements.md](./021-zinc-improvements.md)
+* Date proposed: December 2019
+* Accepted: yes
+* Status: **active**
+# [022-jsr-45.md](./022-jsr-45.md)
+* Date proposed: December 2019
+* Accepted: yes
+* Status: **active**
+# [023-bsp.md](./023-bsp.md)
+* Date proposed: March 2020
+* Accepted: yes
+* Updates:
+	* see https://www.scala-lang.org/blog/2020/10/27/bsp-in-sbt.html
+* Status: **completed**
+# [024-diversity.md](./024-diversity.md)
+* Date proposed: June 2020
+* Accepted: yes
+* Status: **active**
+# [025-inclusive-language.md](./025-inclusive-language.md)
+* Date proposed: October 2020
+* Accepted: yes
+* Status: **active**
+# [026-solidify-getting-started-with-coursier.md](./026-solidify-getting-started-with-coursier.md)
+* Date proposed: June 2021
+* Accepted: yes
+* Status: **active**
+# [027-refactoring.md](./027-refactoring.md)
+* Date proposed: November 2021
+* Status: **awaiting revision**
 
-* proposed May 2016
-* deferred for later consideration
-* considered again and accepted August 2016
-* **dormant** no recent activity as of August 2019
-
-# 002-dotty-migration-path.md
-
-* proposed and accepted May 2016
-* **remains active** as of August 2019
-
-# 003-scala-center-publicity-chair.md
-
-* proposed and accepted May 2016
-* **completed** by the addition of the "community manager" staff position
-* (but now, as of late 2019, instead of an "executive director" and a
-  "community manager", we have an "executive director" and a
-  "technical director")
-
-# 004-sip-and-slip-coordination.md
-
-* proposed and accepted May 2016
-* **remains active**; SIP coordinator is Darja
-
-# 005-continuity-of-scala-js.md
-
-* proposed and accepted May 2016
-* **remains active** as of August 2019
-
-# 006-compile-time-serializibility-check.md
-
-* proposed and accepted August 2016
-* **completed** in 2016
-
-# 007-collections.md
-
-* proposed and accepted November 2016
-* **completed** in 2019 with the release of Scala 2.13
-
-# 008-websites.md
-
-* proposed and accepted November 2016
-* **remains active**
-
-# 009-improve-direct-dependency-experience.md
-
-* proposed and accepted November 2016
-* **completed** in 2017
-
-# 010-compiler-profiling.md
-
-* proposed and accepted May 2017
-* **completed** in 2018
-
-# 011-debugging-symbols.md
-
-* proposed May 2017
-* was postponed, after discussion
-* **superseded** by a sequel proposal: SCP-022
-
-# 012-improve-sbt-learning-materials.md
-
-* proposed May 2017
-* **withdrawn** after discussion
-
-# 013-sbt-migration.md
-
-* proposed and accepted September 2017
-* **completed**, migration largely complete as of August 2019
-
-# 014-production-ready-scalamacros.md
-
-* proposed and accepted September 2017
-* **completed**, in the sense that designs were discussed, trials
-  were made, and conclusions were reached: no substantial changes
-  in Scala 2; design and implementation work on Scala 3 macros remains
-  ongoing at LAMP
-
-# 015-zinc-performance.md
-
-* proposed and accepted September 2017
-* **completed** in 2018
-
-# 016-verbal-descriptions.md
-
-* proposed and accepted March 2018
-* **completed** in 2018
-
-# 017-lsp-stp-wg-support.md
-
-* proposed and accepted March 2018
-* working groups are **dormant**
-* engineering work **remains active**
-
-# 018-converging-214-30.md
-
-* proposed and accepted September 2018
-* **completed**, but in modified form: Scala 2.14
-  is no longer planned; Dotty is already able to consume
-  Scala 2 artifacts; and the Center has completed a modification of Scala 2.13 to read TASTy so it can
-  consume Scala 3 artifacts
-
-# 019-scala-214-30-back-compat.md
-
-* proposed December 2018; **not accepted**
-
-# 020-sbt-transitive-dependencies-conflicts.md
-
-* proposed and accepted December 2018
-* **completed**; see https://www.scala-lang.org/2019/10/17/dependency-management.html
-
-# 021-zinc-improvements.md
-
-* proposed and accepted December 2019
-* **remains active**
-
-# 022-jsr-45.md
-
-* proposed and accepted December 2019
-* **remains active**
-
-# 023-bsp.md
-
-* proposed and accepted March 2020
-* **completed**; see https://www.scala-lang.org/blog/2020/10/27/bsp-in-sbt.html
-
-# 024-diversity.md
-
-* proposed and accepted June 2020
-* **remains active**
-
-# 025-inclusive-language.md
-
-* proposed and accepted October 2020
-* **remains active**
-
-# 026-solidify-getting-started-with-coursier.md
-
-* proposed and accepted June 2021
-* **remains active**
-
-# 027-refactoring.md
-
-* proposed, then withdrawn for revision in November 2021
-* **awaiting revision**
+_This file is auto-generated. Don't edit here, instead run scala-cli run bin/ to regenerate._

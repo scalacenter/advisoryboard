@@ -1,3 +1,9 @@
+---
+date: June 2020
+accepted: true
+status: active
+---
+
 # SCP-024: Scala Center Diversity Initiatives
 
 ## Proposer
