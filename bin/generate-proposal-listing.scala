@@ -44,7 +44,8 @@ import scala.io.Source
       .getLines
       .mkString(Printer.newline)
     val document = Parser.parser.parse(contents)
-    val (date, accepted, updates, status) = Parser.retrieveMetaData(document)
+    val (date, accepted, updates, status) =
+      Parser.retrieveMetaData(document, file)
     Printer.printName(file)
     Printer.printDate(file, date)
     Printer.printAccepted(file, accepted)
@@ -73,7 +74,7 @@ object Printer:
   def printDate(file: File, date: Option[String]) =
     date match
       case Some(d) => pw.write(s"* Date proposed: $d$newline")
-      case _       => println(s"Missing date for ${file.getName}")
+      case _       => println(s"""Missing "date" for ${file.getName}""")
 
   def printAccepted(file: File, accepted: Option[String]) =
     accepted match
@@ -81,7 +82,7 @@ object Printer:
       case Some("false" | "no") => pw.write(s"* Accepted: no$newline")
       case Some(_) =>
         println("Invalid value for accepted. Use either true, yes, false, no")
-      case _ => println(s"Missing accepted value for ${file.getName}")
+      case _ => println(s"""Missing "accepted" value for ${file.getName}""")
 
   def printUpdates(file: File, updates: Option[List[String]]) =
     updates match
@@ -93,7 +94,7 @@ object Printer:
   def printStatus(file: File, status: Option[String]) =
     status match
       case Some(s) => pw.write(s"* Status: **$s**$newline")
-      case _       => println(s"Missing status for ${file.getName}")
+      case _       => println(s"""Missing "status" for ${file.getName}""")
 
   def printWarning() =
     pw.write(
@@ -115,28 +116,49 @@ object Parser:
 
   val parser = FlexParser.builder(options).build()
 
-  def retrieveMetaData(node: Document) =
+  enum AcceptedKey(key: String):
+    case date extends AcceptedKey("date")
+    case accepted extends AcceptedKey("accepted")
+    case updates extends AcceptedKey("updates")
+    case status extends AcceptedKey("status")
+  end AcceptedKey
+
+  def retrieveMetaData(node: Document, file: File) =
     val visitor = new AbstractYamlFrontMatterVisitor()
     visitor.visit(node)
     val data = visitor.getData.asScala
 
-    val metadata = visitor
+    val metadata: Map[AcceptedKey, List[String]] = visitor
       .getData()
       .asScala
       .toMap
-      .collect {
-        case (key, value) if value.asScala.toList.nonEmpty =>
-          key -> value.asScala.toList
+      .foldLeft(Map.empty) { case (mapping, (key, value)) =>
+        if value.asScala.toList.nonEmpty && AcceptedKey.values
+            .map(_.toString.toLowerCase)
+            .contains(key.toLowerCase)
+        then mapping + (AcceptedKey.valueOf(key) -> value.asScala.toList)
+        else if value.asScala.toList.nonEmpty then
+          println(
+            s"""|!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                |"$key" in file: ${file.getName} is not an accepted front matter.
+                |!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                |
+                |The accepted values are:
+                |  ${AcceptedKey.values.mkString(", ")}
+                |
+                |""".stripMargin
+          )
+          mapping
+        else mapping
+
       }
 
-    // These are all the current values we pull from the header. If you want to
-    // add another in the future all you should need to do is get the key here.
     // Keep in mind the YAML front matter only supports subset of YAML
     // https://github.com/vsch/flexmark-java/wiki/Extensions#yaml-front-matter
-    val date = metadata.get("date").flatMap(_.headOption)
-    val accepted = metadata.get("accepted").flatMap(_.headOption)
-    val updates = metadata.get("updates")
-    val status = metadata.get("status").flatMap(_.headOption)
+    val date = metadata.get(AcceptedKey.date).flatMap(_.headOption)
+    val accepted = metadata.get(AcceptedKey.accepted).flatMap(_.headOption)
+    val updates = metadata.get(AcceptedKey.updates)
+    val status = metadata.get(AcceptedKey.status).flatMap(_.headOption)
 
     (date, accepted, updates, status)
   end retrieveMetaData
