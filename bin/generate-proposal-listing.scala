@@ -21,8 +21,6 @@ import scala.io.Source
   *  proposals/README.md file.
   */
 @main def generate() =
-  val wd = Paths.get(".")
-
   val proposalDir = Paths.get(".", "proposals").toFile
 
   assert(
