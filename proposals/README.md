@@ -32,7 +32,9 @@
 * Accepted: yes
 * Updates:
 	* Remains active as of August 2019
-* Status: **active**
+	* It remains part of the mission of the Scala center to make sure Scala is
+	* Since this is well-established, has buy in from all parties, this is
+* Status: **completed**
 # [006-compile-time-serializibility-check.md](./006-compile-time-serializibility-check.md)
 * Date proposed: August 2016
 * Accepted: yes

@@ -3,7 +3,11 @@ date: May 2016
 accepted: true
 updates:
   - Remains active as of August 2019
-status: active
+  - It remains part of the mission of the Scala center to make sure Scala is
+      accessible on other platforms than the JVM.
+  - Since this is well-established, has buy in from all parties, this is
+      considered completed.
+status: completed
 ---
 
 # SCP-005: Ensurance of continuity of Scala.js project
