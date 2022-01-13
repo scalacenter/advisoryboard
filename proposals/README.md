@@ -25,6 +25,7 @@
 * Accepted: yes
 * Updates:
 	* SIP coordinator is Darja
+	* Still active but quiet for some time (Jan 2022)
 * Status: **active**
 # [005-continuity-of-scala-js.md](./005-continuity-of-scala-js.md)
 * Date proposed: May 2016

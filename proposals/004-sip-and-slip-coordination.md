@@ -3,6 +3,7 @@ date: May 2016
 accepted: true
 updates:
   - SIP coordinator is Darja
+  - Still active but quiet for some time (Jan 2022)
 status: active
 ---
 
