@@ -50,7 +50,9 @@
 # [008-websites.md](./008-websites.md)
 * Date proposed: November 2016
 * Accepted: yes
-* Status: **active**
+* Updates:
+	* Both Lightbend and the Center agree that this can be considered complete as
+* Status: **completed**
 # [009-improve-direct-dependency-experience.md](./009-improve-direct-dependency-experience.md)
 * Date proposed: November 2016
 * Accepted: yes

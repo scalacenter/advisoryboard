@@ -1,7 +1,10 @@
 ---
 date: November 2016
 accepted: true
-status: active
+updates:
+  - Both Lightbend and the Center agree that this can be considered complete as
+      the Center is actively coordinating and working on the sites.
+status: completed
 ---
 
 # SCP-008: Maintain scala-lang, docs.scala-lang, scala.epfl.ch websites
