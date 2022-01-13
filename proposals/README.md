@@ -11,7 +11,9 @@
 * Accepted: yes
 * Updates:
 	* Remains active as of August 2019
-* Status: **active**
+	* Scala 3 can read libraries compiled with Scala 2 and vice versa
+	* [Migration guide](https://docs.scala-lang.org/scala3/guides/migration/tooling-migration-mode.html) documents the deltas between dotc and scalac
+* Status: **completed**
 # [003-scala-center-publicity-chair.md](./003-scala-center-publicity-chair.md)
 * Date proposed: May 2016
 * Accepted: yes
