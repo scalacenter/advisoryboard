@@ -108,7 +108,8 @@
 * Updates:
 	* Working groups are dormant
 	* Engineering work remains active
-* Status: **dormant/active**
+	* The Center lead the efforts of the creation of BSP and also the
+* Status: **completed**
 # [018-converging-214-30.md](./018-converging-214-30.md)
 * Date proposed: September 2018
 * Accepted: yes
