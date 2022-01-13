@@ -4,7 +4,8 @@ accepted: true
 updates:
   - Working groups are dormant
   - Engineering work remains active
-status: dormant/active
+  - The Center lead the efforts of the creation of BSP and also the implementation of this in both sbt and Bloop.
+status: completed
 ---
 
 # Scala Center Support for LSP and STP Working Groups

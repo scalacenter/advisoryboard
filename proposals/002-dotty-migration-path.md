@@ -3,7 +3,9 @@ date: May 2016
 accepted: true
 updates:
   - Remains active as of August 2019
-status: active
+  - Scala 3 can read libraries compiled with Scala 2 and vice versa
+  - [Migration guide](https://docs.scala-lang.org/scala3/guides/migration/tooling-migration-mode.html) documents the deltas between dotc and scalac
+status: completed
 ---
 
 # SCP-002: Migration path to Dotty for Scalac users

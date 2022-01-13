@@ -11,7 +11,9 @@
 * Accepted: yes
 * Updates:
 	* Remains active as of August 2019
-* Status: **active**
+	* Scala 3 can read libraries compiled with Scala 2 and vice versa
+	* [Migration guide](https://docs.scala-lang.org/scala3/guides/migration/tooling-migration-mode.html) documents the deltas between dotc and scalac
+* Status: **completed**
 # [003-scala-center-publicity-chair.md](./003-scala-center-publicity-chair.md)
 * Date proposed: May 2016
 * Accepted: yes
@@ -23,13 +25,16 @@
 * Accepted: yes
 * Updates:
 	* SIP coordinator is Darja
+	* Still active but quiet for some time (Jan 2022)
 * Status: **active**
 # [005-continuity-of-scala-js.md](./005-continuity-of-scala-js.md)
 * Date proposed: May 2016
 * Accepted: yes
 * Updates:
 	* Remains active as of August 2019
-* Status: **active**
+	* It remains part of the mission of the Scala center to make sure Scala is accessible on other platforms than the JVM.
+	* Since this is well-established, has buy in from all parties, this is considered completed.
+* Status: **completed**
 # [006-compile-time-serializibility-check.md](./006-compile-time-serializibility-check.md)
 * Date proposed: August 2016
 * Accepted: yes
@@ -45,7 +50,9 @@
 # [008-websites.md](./008-websites.md)
 * Date proposed: November 2016
 * Accepted: yes
-* Status: **active**
+* Updates:
+	* Both Lightbend and the Center agree that this can be considered complete as the Center is actively coordinating and working on the sites.
+* Status: **completed**
 # [009-improve-direct-dependency-experience.md](./009-improve-direct-dependency-experience.md)
 * Date proposed: November 2016
 * Accepted: yes
@@ -101,7 +108,8 @@
 * Updates:
 	* Working groups are dormant
 	* Engineering work remains active
-* Status: **dormant/active**
+	* The Center lead the efforts of the creation of BSP and also the implementation of this in both sbt and Bloop.
+* Status: **completed**
 # [018-converging-214-30.md](./018-converging-214-30.md)
 * Date proposed: September 2018
 * Accepted: yes
