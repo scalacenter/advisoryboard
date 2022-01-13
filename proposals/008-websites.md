@@ -2,8 +2,7 @@
 date: November 2016
 accepted: true
 updates:
-  - Both Lightbend and the Center agree that this can be considered complete as
-      the Center is actively coordinating and working on the sites.
+  - Both Lightbend and the Center agree that this can be considered complete as the Center is actively coordinating and working on the sites.
 status: completed
 ---
 

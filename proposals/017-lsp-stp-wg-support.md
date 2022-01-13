@@ -4,8 +4,7 @@ accepted: true
 updates:
   - Working groups are dormant
   - Engineering work remains active
-  - The Center lead the efforts of the creation of BSP and also the
-      implementation of this in both sbt and Bloop.
+  - The Center lead the efforts of the creation of BSP and also the implementation of this in both sbt and Bloop.
 status: completed
 ---
 
