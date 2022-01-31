@@ -1,3 +1,9 @@
+---
+date: January 2022
+accepted: true
+status: active
+---
+
 # Community Delegate Terms
 
 ## Proposer
