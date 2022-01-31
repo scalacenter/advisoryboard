@@ -154,5 +154,9 @@
 # [027-refactoring.md](./027-refactoring.md)
 * Date proposed: November 2021
 * Status: **awaiting revision**
+# [028-community-delegate-terms.md](./028-community-delegate-terms.md)
+* Date proposed: January 2022
+* Accepted: yes
+* Status: **active**
 
 _This file is auto-generated. Don't edit here, instead run scala-cli run bin/ to regenerate._
