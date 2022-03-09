@@ -1,11 +1,13 @@
 ---
 date: November 2021
 status: awaiting discussion
+updates:
+  - revised March 2022
 ---
 
 ## Proposer
 
-Proposed by Eugene Yokota, Twitter, November 2021 (revised March 2022)
+Proposed by Eugene Yokota, Twitter, November 2021
 
 ## Abstract
 

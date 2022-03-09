@@ -153,6 +153,8 @@
 * Status: **active**
 # [027-refactoring.md](./027-refactoring.md)
 * Date proposed: November 2021
+* Updates:
+	* revised March 2022
 * Status: **awaiting discussion**
 # [028-community-delegate-terms.md](./028-community-delegate-terms.md)
 * Date proposed: January 2022
