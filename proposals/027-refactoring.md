@@ -1,11 +1,11 @@
 ---
 date: November 2021
-status: awaiting revision
+status: awaiting discussion
 ---
 
 ## Proposer
 
-Proposed by Eugene Yokota, Twitter, November 1st, 2021
+Proposed by Eugene Yokota, Twitter, November 2021 (revised March 2022)
 
 ## Abstract
 
@@ -86,7 +86,7 @@ We expect overall effort to require one ~ three months effort, depending on the 
 
 We estimate that given six months, a single engineer should be able to make substantial progress.
 
-  [lsp-rename]: https://microsoft.github.io/language-server-protocol/specifications/specification-current/#textDocument_rename 
+  [lsp-rename]: https://microsoft.github.io/language-server-protocol/specifications/specification-current/#textDocument_rename
   [lsp-car]: https://microsoft.github.io/language-server-protocol/specifications/specification-current/#textDocument_codeAction
-  [lsif]: https://code.visualstudio.com/blogs/2019/02/19/lsif 
+  [lsif]: https://code.visualstudio.com/blogs/2019/02/19/lsif
   [lsif-java]: https://sourcegraph.github.io/lsif-java/
