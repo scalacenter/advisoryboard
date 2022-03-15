@@ -150,7 +150,7 @@
 # [026-solidify-getting-started-with-coursier.md](./026-solidify-getting-started-with-coursier.md)
 * Date proposed: June 2021
 * Accepted: yes
-* Status: **active**
+* Status: **completed**
 # [027-refactoring.md](./027-refactoring.md)
 * Date proposed: November 2021
 * Updates:

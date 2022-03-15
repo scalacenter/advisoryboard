@@ -1,7 +1,7 @@
 ---
 date: June 2021
 accepted: true
-status: active
+status: completed
 ---
 
 # Solidify Getting Started with Coursier
