@@ -150,6 +150,8 @@
 # [026-solidify-getting-started-with-coursier.md](./026-solidify-getting-started-with-coursier.md)
 * Date proposed: June 2021
 * Accepted: yes
+* Updates:
+	* Roadmap and update can be found on https://contributors.scala-lang.org/t/simplify-the-getting-started-experience-with-coursier-roadmap/5283/6
 * Status: **completed**
 # [027-refactoring.md](./027-refactoring.md)
 * Date proposed: November 2021

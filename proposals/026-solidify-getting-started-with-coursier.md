@@ -1,6 +1,8 @@
 ---
 date: June 2021
 accepted: true
+updates:
+  - Roadmap and update can be found on https://contributors.scala-lang.org/t/simplify-the-getting-started-experience-with-coursier-roadmap/5283/6
 status: completed
 ---
 
