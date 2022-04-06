@@ -146,7 +146,7 @@
 # [025-inclusive-language.md](./025-inclusive-language.md)
 * Date proposed: October 2020
 * Accepted: yes
-* Status: **active**
+* Status: **completed**
 # [026-solidify-getting-started-with-coursier.md](./026-solidify-getting-started-with-coursier.md)
 * Date proposed: June 2021
 * Accepted: yes

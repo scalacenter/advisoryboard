@@ -1,7 +1,7 @@
 ---
 date: October 2020
 accepted: true
-status: active
+status: completed
 ---
 
 # SCP-025: Use of Inclusive Language
