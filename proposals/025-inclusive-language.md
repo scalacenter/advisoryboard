@@ -1,7 +1,9 @@
 ---
 date: October 2020
 accepted: true
-status: active
+updates:
+  - The blog post at https://www.scala-lang.org/blog-detail/2022/04/05/inclusive-language-guide.html marked the completion.
+status: completed
 ---
 
 # SCP-025: Use of Inclusive Language
