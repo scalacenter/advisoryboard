@@ -146,6 +146,8 @@
 # [025-inclusive-language.md](./025-inclusive-language.md)
 * Date proposed: October 2020
 * Accepted: yes
+* Updates:
+	* The blog post at https://www.scala-lang.org/blog-detail/2022/04/05/inclusive-language-guide.html marked the completion.
 * Status: **completed**
 # [026-solidify-getting-started-with-coursier.md](./026-solidify-getting-started-with-coursier.md)
 * Date proposed: June 2021
