@@ -1,6 +1,8 @@
 ---
 date: June 2020
 accepted: true
+updates:
+  - Work is currently focused on the community governance project which is intertwined with this (April 2022).
 status: active
 ---
 

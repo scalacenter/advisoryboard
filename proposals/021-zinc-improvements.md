@@ -1,7 +1,9 @@
 ---
 date: December 2019
 accepted: true
-status: active
+updates:
+  - Since most points have been addressed this has been moved to completed
+status: completed
 ---
 
 # SCP-021: Zinc improvements
