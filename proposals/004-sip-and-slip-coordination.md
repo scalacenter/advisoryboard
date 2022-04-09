@@ -4,6 +4,7 @@ accepted: true
 updates:
   - SIP coordinator is Darja
   - Still active but quiet for some time (Jan 2022)
+  - Currently being revamped and should come alive this next quarter (April 2022)
 status: active
 ---
 

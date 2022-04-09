@@ -1,8 +1,9 @@
 ---
 date: November 2021
-status: awaiting discussion
+status: accepted
 updates:
   - revised March 2022
+  - A working group will be created to further pull out actionable items from this proposal before any work will begin.
 ---
 
 ## Proposer
@@ -87,6 +88,14 @@ Similarly, we might take advantage of the work that's been done in [The Language
 We expect overall effort to require one ~ three months effort, depending on the coordination required with interested parties.
 
 We estimate that given six months, a single engineer should be able to make substantial progress.
+ 
+## Amendment (Chris Kipp)
+
+After the board meeting on April 8 it was agreed on that this proposal is
+accepted, with the condition that a working group be created first to further
+discuss the issues mentioned in here and also to pull out some more concrete
+actionable items to better understand what exactly would constitute this
+proposal being marked as *completed* in the future.
 
   [lsp-rename]: https://microsoft.github.io/language-server-protocol/specifications/specification-current/#textDocument_rename
   [lsp-car]: https://microsoft.github.io/language-server-protocol/specifications/specification-current/#textDocument_codeAction
