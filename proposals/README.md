@@ -26,6 +26,7 @@
 * Updates:
 	* SIP coordinator is Darja
 	* Still active but quiet for some time (Jan 2022)
+	* Currently being revamped and should come alive this next quarter (April 2022)
 * Status: **active**
 # [005-continuity-of-scala-js.md](./005-continuity-of-scala-js.md)
 * Date proposed: May 2016
@@ -128,10 +129,14 @@
 # [021-zinc-improvements.md](./021-zinc-improvements.md)
 * Date proposed: December 2019
 * Accepted: yes
-* Status: **active**
+* Updates:
+	* Since most points have been addressed this has been moved to completed
+* Status: **completed**
 # [022-jsr-45.md](./022-jsr-45.md)
 * Date proposed: December 2019
 * Accepted: yes
+* Updates:
+	* Not yet completed, but work has been done. Given time the goal is still to complete (April 2022)
 * Status: **active**
 # [023-bsp.md](./023-bsp.md)
 * Date proposed: March 2020
@@ -142,6 +147,8 @@
 # [024-diversity.md](./024-diversity.md)
 * Date proposed: June 2020
 * Accepted: yes
+* Updates:
+	* Work is currently focused on the community governance project which is intertwined with this (April 2022).
 * Status: **active**
 # [025-inclusive-language.md](./025-inclusive-language.md)
 * Date proposed: October 2020
@@ -159,7 +166,8 @@
 * Date proposed: November 2021
 * Updates:
 	* revised March 2022
-* Status: **awaiting discussion**
+	* A working group will be created to further pull out actionable items from this proposal before any work will begin.
+* Status: **accepted**
 # [028-community-delegate-terms.md](./028-community-delegate-terms.md)
 * Date proposed: January 2022
 * Accepted: yes
