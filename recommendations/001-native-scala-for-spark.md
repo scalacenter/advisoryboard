@@ -1,1 +1,0 @@
-../proposals/001-native-scala-for-spark.md

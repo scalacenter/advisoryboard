@@ -1,1 +1,0 @@
-../proposals/003-scala-center-publicity-chair.md
