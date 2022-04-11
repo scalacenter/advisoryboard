@@ -1,1 +1,0 @@
-../proposals/005-continuity-of-scala-js.md

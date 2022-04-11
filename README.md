@@ -16,7 +16,7 @@ consideration only by
  - The Scala Center,
  - advisory board members,
  - affiliate members, or
- - community members,
+ - community members through the community representatives,
 
 and should be made via a pull-request adding a new Markdown file to the
 [proposals](https://github.com/scalacenter/advisoryboard/tree/main/proposals)
@@ -30,19 +30,13 @@ Proposals should follow the format and sections laid out in the [template
 proposal](https://github.com/scalacenter/advisoryboard/tree/main/templates/proposal.md),
 and should be concise enough to fit on a single side of paper if printed out.
 
-### Recommendations
-
-Once a proposal has been adopted by the Advisory Board, it will become a
-recommendation, and should be copied noting any amendments, or linked if
-unchanged into the
-[recommendations](https://github.com/scalacenter/advisoryboard/tree/main/recommendations)
-directory.
-
 ### Proposals status
 
 To see the up-to-date status of a proposal see the
-[proposals/README](./proposals/README.md) which holds a summary of updates and
-statuses of all proposals.
+[proposals/README](./proposals/README.md) which holds whether or not the
+proposal has been accepted, a summary of updates and the current status of all
+proposals. Once a proposal has been accepted by the board it becomes a
+"recommendation".
 
 **NOTE**: This proposals/README.md file is auto-generated, so if you need to add
 an update or change the status of a proposal make sure to do so in the heading
@@ -58,8 +52,9 @@ updates:
 status: completed, postponed, active, etc
 ```
 
-To regenerate the proposals/README.md file run `scala-cli run bin/` from the
-root of this project.
+The proposals/README.md will be updated in CI when merged into `main`, but you
+can also manually regenerate it with `scala-cli run bin/` from the root of this
+project.
 
 ## Invitations
 
@@ -89,5 +84,3 @@ Contributions *may* be made to this repository, however the documents here
 represent a record of the proceedings of Advisory Board meetings, so only
 immaterial changes such as spelling corrections and reformatting will be
 accepted.
-
-

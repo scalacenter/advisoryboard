@@ -1,1 +1,0 @@
-../proposals/028-community-delegate-terms.md

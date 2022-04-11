@@ -1,1 +1,0 @@
-../proposals/024-diversity.md
