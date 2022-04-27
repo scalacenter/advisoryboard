@@ -27,6 +27,7 @@ The current representatives are:
  - 47 Degrees: Maureen Elsberry / Diego E. Alonso Blas
  - Databricks: Kris Mok
  - Goldman Sachs: Alex Hurst / Graham Griffiths
+ - Knoldus: Vikas Hazrati
  - Lightbend: Lukas Rytz
  - Lunatech: Chris Kipp
  - Morgan Stanley: Daniela Sfregola
