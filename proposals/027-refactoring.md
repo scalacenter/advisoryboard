@@ -4,6 +4,7 @@ status: accepted
 updates:
   - revised March 2022
   - A working group will be created to further pull out actionable items from this proposal before any work will begin.
+  - revised in June 2022 to show the outcome of the working group.
 ---
 
 ## Proposer
@@ -89,13 +90,38 @@ We expect overall effort to require one ~ three months effort, depending on the 
 
 We estimate that given six months, a single engineer should be able to make substantial progress.
  
-## Amendment (Chris Kipp)
+## Amendment (Chris Kipp and Julien Richard-Foy)
 
 After the board meeting on April 8 it was agreed on that this proposal is
 accepted, with the condition that a working group be created first to further
 discuss the issues mentioned in here and also to pull out some more concrete
 actionable items to better understand what exactly would constitute this
 proposal being marked as *completed* in the future.
+
+The working group met the 18th of May 2022. It was composed of Julien Richard-Foy (Scala Center), Sébastien Doeraene (Scala Center), Adrien Piquerez (Scala Center), Eugene Yokota (Twitter), Tomasz Godzik (VirtusLab), and Krzysztof Romanowski (VirtusLab).
+
+The group agreed on a reasonable concrete solution to the problem of applying refactorings across multiple Scala projects from an IDE that only has a partial knowledge of the whole system (ie, it knows only one of the multiple projects).
+
+Scalafix can be used to implement the refactorings (it already supports renaming symbols, for instance). So, we need a way to “drive” Scalafix to apply the desired refactorings in all the desired projects from an action performed in an IDE.
+
+From the IDE side, we need to implement an action that produces a text-based description of the refactoring. E.g., for a renamed symbol:
+
+~~~ json
+{
+  "rename": {
+    "from": "foo.bar.Baz.quux",
+    "to": "foo.bar.Baz.bah"
+  }
+}
+~~~
+
+Then, we need to implement a “command” in build tools (sbt, Bazel, etc.) to apply the text-based description of the refactoring to the whole project (that’s the part that drives Scalafix).
+
+Ultimately, we could work on making the “Scalafix driver” more reusable to make it easier to support alternative build tools. For instance, by publishing as a library the logic that translates the text-based description of the refactorings into Scalafix rules. Or, by publishing a command-line tool that would take as parameters both the text-based description of the refactoring and the list of “Scala projects” (source directories, command to produce semanticdb, projects graph), and that would apply Scalafix everywhere (supporting new build-tools would be achieved by implementing a command that exports the projects of the build definition).
+
+There is still an open question: should such a tool be available in public Metals releases? How would the “export refactoring” actions be integrated with the “usual” refactoring actions?
+
+The estimated cost for implementing this project is one or two developer-months.
 
   [lsp-rename]: https://microsoft.github.io/language-server-protocol/specifications/specification-current/#textDocument_rename
   [lsp-car]: https://microsoft.github.io/language-server-protocol/specifications/specification-current/#textDocument_codeAction

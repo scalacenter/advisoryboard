@@ -167,6 +167,7 @@
 * Updates:
 	* revised March 2022
 	* A working group will be created to further pull out actionable items from this proposal before any work will begin.
+	* revised in June 2022 to show the outcome of the working group.
 * Status: **accepted**
 # [028-community-delegate-terms.md](./028-community-delegate-terms.md)
 * Date proposed: January 2022
