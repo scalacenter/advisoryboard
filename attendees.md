@@ -12,7 +12,7 @@ least once a year.
  - Chairperson: Chris Kipp
  - Secretary: Seth Tisue
  - Executive Director: Darja Jovanovic
- - Technical Director: Sébastien Doeraene
+ - Technical Director: Julien Richard-Foy
  - Technical Advisor: Martin Odersky
 
 We customarily rotate the position of chairperson annually.
