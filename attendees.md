@@ -32,16 +32,14 @@ The current representatives are:
  - Lunatech: Chris Kipp
  - Morgan Stanley: Daniela Sfregola
  - Spotify: Claire McGinty
- - Twitter: Eugene Yokota
  - VirtusLab: Krzysztof Romanowski
 
 ## Community Members
 
-A number of members are also selected to sit on the board to represent the Scala
-community. Currently, these are:
+Members may also be selected to sit on the board to represent the Scala
+community. Currently, this is:
 
- - Bill Venners
- - Rob Norris
+ - Eugene Yokota
 
 ## Other Attendees
 
