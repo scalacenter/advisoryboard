@@ -25,7 +25,6 @@ Each Advisory Board Sponsor nominates a representative to the board.
 The current representatives are:
 
  - 47 Degrees: Maureen Elsberry / Diego E. Alonso Blas
- - Databricks: Haoyi Li
  - Goldman Sachs: Alex Hurst / Graham Griffiths
  - Knoldus: Vikas Hazrati
  - Lightbend: Lukas Rytz
