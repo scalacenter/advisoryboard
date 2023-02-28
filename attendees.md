@@ -2,7 +2,7 @@
 
 The Scala Center Advisory Board meets every quarter.
 
-Meeting are typically by videoconference, but sometimes physical when
+Meeting are typically by video-conference, but sometimes physical when
 a convenient opportunity arises for a majority of attendees, for
 example at a Scala conference.  We aim to meet in-person at
 least once a year.
@@ -25,7 +25,6 @@ Each Advisory Board Sponsor nominates a representative to the board.
 The current representatives are:
 
  - 47 Degrees: Maureen Elsberry / Diego E. Alonso Blas
- - Goldman Sachs: Alex Hurst / Graham Griffiths
  - Knoldus: Vikas Hazrati
  - Lightbend: Lukas Rytz
  - Lunatech: Chris Kipp
