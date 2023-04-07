@@ -8,7 +8,7 @@ Proposed by Eugene Yokota, community delegate
 
 We propose a plan to manage sbt Community repository.
 
-In 2021, JFrog sunsetted Bintray, and since then they've generously sponsored Scala ecosystem by providing us an Artifactory instance. When Eugene created the "Artsy" instance he licensed it under Scala Center, but generally both parties have been hands-free since it's been operating good enough as a Bintray replacement. This proposal formalizes the management of the artifacts hosted in the repo, and re-evaluate the technical implementations.
+In 2021, JFrog sunsetted Bintray, and since then they've generously sponsored Scala ecosystem by providing us an Artifactory instance. When Eugene created the "Artsy" instance he licensed it under Scala Center, but generally both parties have been hands-free since it's been operating good enough as a Bintray replacement. This proposal formalizes the management of the artifacts hosted in the repo, and re-evaluates the technical implementations.
 
 ## Details
 
