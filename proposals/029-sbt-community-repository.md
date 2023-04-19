@@ -27,3 +27,13 @@ Artsy instance has gone down twice since 2021, and this is a reminder that we sh
 - Retain the ability to reproduce Linux installer hosting
 - Estimate annual cost of running either on our own
 - Coordinate with the community to republish/transfer plugins to Maven Central
+
+## Cost
+
+The cost and timescales largely depends on the chosen scope.
+Figuring out the cost is part of the proposal. As a reference, 1 TB of monthly transfer is considered a free tier on AWS CloudFront.
+
+## Timescales
+
+The cost and timescales largely depends on the chosen scope.
+Some of the operation will be an on-going management, though day-to-day involvement is expected to be minimal.
