@@ -173,5 +173,6 @@
 * Date proposed: January 2022
 * Accepted: yes
 * Status: **active**
+# [029-sbt-community-repository.md](./029-sbt-community-repository.md)
 
 _This file is auto-generated. Don't edit here, instead run scala-cli run bin/ to regenerate._
