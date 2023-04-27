@@ -174,5 +174,7 @@
 * Accepted: yes
 * Status: **active**
 # [029-sbt-community-repository.md](./029-sbt-community-repository.md)
+# [030-governance-page.md](./030-governance-page.md)
+* Date proposed: April 25th 2023
 
 _This file is auto-generated. Don't edit here, instead run scala-cli run bin/ to regenerate._
