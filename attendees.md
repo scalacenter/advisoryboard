@@ -24,7 +24,7 @@ Each Advisory Board Sponsor nominates a representative to the board.
 
 The current representatives are:
 
- - 47 Degrees: Maureen Elsberry / Diego E. Alonso Blas
+ - Xebia Functional: Maureen Elsberry / Diego E. Alonso Blas
  - Knoldus: Vikas Hazrati
  - Lightbend: Lukas Rytz
  - Lunatech: Chris Kipp
