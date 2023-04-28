@@ -164,17 +164,23 @@
 * Status: **completed**
 # [027-refactoring.md](./027-refactoring.md)
 * Date proposed: November 2021
+* Accepted: yes
 * Updates:
 	* revised March 2022
 	* A working group will be created to further pull out actionable items from this proposal before any work will begin.
 	* revised in June 2022 to show the outcome of the working group.
-* Status: **accepted**
+* Status: **dormant**
 # [028-community-delegate-terms.md](./028-community-delegate-terms.md)
 * Date proposed: January 2022
 * Accepted: yes
 * Status: **active**
 # [029-sbt-community-repository.md](./029-sbt-community-repository.md)
+* Date proposed: April 2023
+* Accepted: yes
+* Status: **active**
 # [030-governance-page.md](./030-governance-page.md)
 * Date proposed: April 25th 2023
+* Accepted: yes
+* Status: **active**
 
 _This file is auto-generated. Don't edit here, instead run scala-cli run bin/ to regenerate._
