@@ -1,6 +1,6 @@
 ---
 date: November 2021
-status: accepted
+status: dormant
 updates:
   - revised March 2022
   - A working group will be created to further pull out actionable items from this proposal before any work will begin.
