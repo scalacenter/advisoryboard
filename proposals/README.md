@@ -120,6 +120,7 @@
 # [019-scala-214-30-back-compat.md](./019-scala-214-30-back-compat.md)
 * Date proposed: September 2018
 * Accepted: no
+* Status: **rejected**
 # [020-sbt-transitive-dependencies-conflicts.md](./020-sbt-transitive-dependencies-conflicts.md)
 * Date proposed: December 2018
 * Accepted: yes
@@ -169,7 +170,7 @@
 	* revised March 2022
 	* A working group will be created to further pull out actionable items from this proposal before any work will begin.
 	* revised in June 2022 to show the outcome of the working group.
-* Status: **dormant**
+* Status: **accepted**
 # [028-community-delegate-terms.md](./028-community-delegate-terms.md)
 * Date proposed: January 2022
 * Accepted: yes
