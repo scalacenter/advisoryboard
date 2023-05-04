@@ -1,3 +1,9 @@
+---
+date: April 2023
+accepted: true
+status: active
+---
+
 # sbt Community repository
 
 ## Proposer

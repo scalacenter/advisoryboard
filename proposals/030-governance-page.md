@@ -1,5 +1,7 @@
 ---
 date: April 25th 2023
+accepted: true
+status: active
 ---
 
 # The governance page for Scala

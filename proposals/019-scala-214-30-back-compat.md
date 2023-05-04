@@ -1,6 +1,7 @@
 ---
 date: September 2018
 accepted: false
+status: rejected
 ---
 
 # SCP-019: Focusing on backwards compatibility for Scala 2.14 and Scala 3.0
