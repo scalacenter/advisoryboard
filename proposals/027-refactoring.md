@@ -40,7 +40,7 @@ which the IDEs will not be able to open easily.
 
 For the front-end, we can envision:
 - creating a web UI
-- coordiate with IDEs to use them directly as UI
+- coordinate with IDEs to use them directly as UI
 
 For the back-end, we can envision:
 - use Scalafix
