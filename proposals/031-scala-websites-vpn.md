@@ -1,5 +1,7 @@
 ---
 date: June 15 2023
+accepted: true
+status: completed
 ---
 
 # Ensure reachability of Scala websites
