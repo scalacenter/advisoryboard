@@ -185,5 +185,7 @@
 * Status: **active**
 # [031-scala-websites-vpn.md](./031-scala-websites-vpn.md)
 * Date proposed: June 15 2023
+* Accepted: yes
+* Status: **completed**
 
 _This file is auto-generated. Don't edit here, instead run scala-cli run bin/ to regenerate._
