@@ -1,4 +1,4 @@
-//> using scala "3.3.0"
+//> using scala "3.3.1"
 //> using lib "com.vladsch.flexmark:flexmark-all:0.64.8"
 
 import java.io.PrintWriter
