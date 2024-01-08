@@ -29,7 +29,7 @@ The current representatives are:
  - Lightbend: Lukas Rytz
  - Lunatech: Chris Kipp
  - Morgan Stanley: Daniela Sfregola
- - Spotify: Claire McGinty
+ - Spotify: Michel Davit
  - VirtusLab: Krzysztof Romanowski
 
 ## Community Members
