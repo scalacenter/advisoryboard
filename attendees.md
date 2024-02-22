@@ -24,13 +24,10 @@ Each Advisory Board Sponsor nominates a representative to the board.
 
 The current representatives are:
 
- - Xebia Functional: Maureen Elsberry / Diego E. Alonso Blas
- - Knoldus: Vikas Hazrati
  - Lightbend: Lukas Rytz
- - Lunatech: Chris Kipp
  - Morgan Stanley: Daniela Sfregola
  - Spotify: Michel Davit
- - VirtusLab: Krzysztof Romanowski
+ - VirtusLab: Krzysztof Borowski
 
 ## Community Members
 
