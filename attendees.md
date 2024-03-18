@@ -31,9 +31,10 @@ The current representatives are:
 
 ## Community Members
 
-Members may also be selected to sit on the board to represent the Scala
+Individuals may also be selected to sit on the board to represent the Scala
 community. Currently, this is:
 
+ - Zainab Ali
  - Eugene Yokota
 
 ## Other Attendees
