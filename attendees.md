@@ -26,7 +26,6 @@ The current representatives are:
 
  - Lightbend: Lukas Rytz
  - Morgan Stanley: Daniela Sfregola
- - Spotify: Michel Davit
  - VirtusLab: Krzysztof Borowski
 
 ## Community Members
