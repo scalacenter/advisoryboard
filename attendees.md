@@ -27,6 +27,7 @@ The current representatives are:
  - Lightbend: Lukas Rytz
  - Morgan Stanley: Daniela Sfregola
  - VirtusLab: Krzysztof Borowski
+ - JetBrains: Dmitrii Naumenko
 
 ## Community Members
 
