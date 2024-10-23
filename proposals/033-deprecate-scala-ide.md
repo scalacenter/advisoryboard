@@ -1,5 +1,7 @@
 ---
 date: August 2024
+accepted: true
+status: active
 ---
 
 # Deprecate Eclipse Scala IDE
