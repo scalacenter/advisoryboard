@@ -192,6 +192,6 @@
 # [033-deprecate-scala-ide.md](./033-deprecate-scala-ide.md)
 * Date proposed: August 2024
 * Accepted: yes
-* Status: **active**
+* Status: **completed**
 
 _This file is auto-generated. Don't edit here, instead run scala-cli run bin/ to regenerate._
