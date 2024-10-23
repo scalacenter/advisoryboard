@@ -1,5 +1,7 @@
 ---
 date: May 2024
+accepted: true
+status: completed
 ---
 
 # Provide guidance on choosing between Scala LTS and Next
