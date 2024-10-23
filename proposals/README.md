@@ -189,5 +189,9 @@
 * Status: **completed**
 # [032-scala-version-guidance.md](./032-scala-version-guidance.md)
 * Date proposed: May 2024
+# [033-deprecate-scala-ide.md](./033-deprecate-scala-ide.md)
+* Date proposed: August 2024
+* Accepted: yes
+* Status: **active**
 
 _This file is auto-generated. Don't edit here, instead run scala-cli run bin/ to regenerate._
