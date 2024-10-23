@@ -187,5 +187,7 @@
 * Date proposed: June 15 2023
 * Accepted: yes
 * Status: **completed**
+# [032-scala-version-guidance.md](./032-scala-version-guidance.md)
+* Date proposed: May 2024
 
 _This file is auto-generated. Don't edit here, instead run scala-cli run bin/ to regenerate._
