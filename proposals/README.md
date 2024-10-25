@@ -189,6 +189,8 @@
 * Status: **completed**
 # [032-scala-version-guidance.md](./032-scala-version-guidance.md)
 * Date proposed: May 2024
+* Accepted: yes
+* Status: **completed**
 # [033-deprecate-scala-ide.md](./033-deprecate-scala-ide.md)
 * Date proposed: August 2024
 * Accepted: yes
