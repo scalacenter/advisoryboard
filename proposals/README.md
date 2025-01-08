@@ -195,5 +195,6 @@
 * Date proposed: August 2024
 * Accepted: yes
 * Status: **completed**
+# [034-artifact-publishing.md](./034-artifact-publishing.md)
 
 _This file is auto-generated. Don't edit here, instead run scala-cli run bin/ to regenerate._
