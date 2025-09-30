@@ -1,6 +1,6 @@
 #!/usr/local/bin/env -S scala-cli shebang
 
-//> using scala 3.7.1
+//> using scala 3.7.3
 //> using dep com.vladsch.flexmark:flexmark-all:0.64.8
 
 import java.io.PrintWriter
