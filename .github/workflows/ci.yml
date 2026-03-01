@@ -13,7 +13,7 @@ jobs:
     steps:
       - uses: actions/checkout@v6
       - uses: coursier/cache-action@v6
-      - uses: coursier/setup-action@v1.3.9
+      - uses: coursier/setup-action@v2.0.3
         with:
           jvm: temurin:1.17
           apps: "scala-cli"
