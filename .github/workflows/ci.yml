@@ -12,7 +12,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v6
-      - uses: coursier/cache-action@v6
+      - uses: coursier/cache-action@v8
       - uses: coursier/setup-action@v1.3.9
         with:
           jvm: temurin:1.17
