@@ -1,6 +1,6 @@
 #!/usr/local/bin/env -S scala-cli shebang
 
-//> using scala 3.8.4
+//> using scala 3.9.0
 //> using dep com.vladsch.flexmark:flexmark-all:0.64.8
 
 import java.io.PrintWriter
@@ -80,7 +80,7 @@ object Printer:
     accepted match
       case Some("true" | "yes") => pw.write(s"* Accepted: yes$newline")
       case Some("false" | "no") => pw.write(s"* Accepted: no$newline")
-      case Some(_) =>
+      case Some(_)              =>
         println("Invalid value for accepted. Use either true, yes, false, no")
       case _ => println(s"""Missing "accepted" value for ${file.getName}""")
 
